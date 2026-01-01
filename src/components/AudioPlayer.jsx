@@ -84,7 +84,7 @@ export default function AudioPlayer({ src }) {
                                 Tap to Begin
                             </p>
                             <p className="font-inter text-sm text-cream/60">
-                                Your mystical experience awaits
+                                
                             </p>
                         </div>
                     </button>
