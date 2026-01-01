@@ -57,7 +57,7 @@ export default function PasswordPrompt({ envelope, onSuccess, onClose }) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (password === envelope.password) {
+        if (password.trim() === envelope.password) {
             onSuccess()
         } else {
             setError(true)

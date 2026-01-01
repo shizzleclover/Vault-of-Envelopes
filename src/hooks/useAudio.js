@@ -34,13 +34,12 @@ export function useAudio(src, options = {}) {
 
         const audio = new Audio(src)
         audio.loop = loop
-        audio.volume = 0
+        audio.volume = volume
         audioRef.current = audio
 
         return () => {
             if (audioRef.current) {
                 audioRef.current.pause()
-                audioRef.current.src = ''
                 audioRef.current = null
             }
             if (fadeIntervalRef.current) {
@@ -119,31 +118,24 @@ export function useAudio(src, options = {}) {
         })
     }, [fadeOutDuration])
 
-    // Play with fade in
+    // Play immediately
     const play = useCallback(async () => {
         if (!audioRef.current) return
 
         try {
             setIsBlocked(false)
-            const playPromise = audioRef.current.play()
-            if (playPromise !== undefined) {
-                await playPromise.catch(error => {
-                    // Ignore interruption errors
-                    if (error.name === 'AbortError' || error.name === 'NotSupportedError') return
-                    throw error
-                })
-            }
+            audioRef.current.volume = volume
+            await audioRef.current.play()
             setIsPlaying(true)
-            fadeIn()
         } catch (error) {
             if (error.name === 'NotAllowedError') {
                 setIsBlocked(true)
                 console.log('Audio autoplay blocked - waiting for user interaction')
             } else {
-                console.error('Audio play error:', error)
+                console.error(`Audio play error for ${src}:`, error)
             }
         }
-    }, [fadeIn])
+    }, [volume, src])
 
     // Stop with fade out
     const stop = useCallback(async () => {

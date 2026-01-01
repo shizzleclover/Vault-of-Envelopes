@@ -89,7 +89,7 @@
             ]
         },
         "password": "oscrohOG",
-        "backgroundMusic": "/music/Oscroh.mp3",
+        "backgroundMusic": "/Music/Oscroh.mp3",
         "tarotCard": {
             "id": "the-lovers",
             "name": "The Lovers",
@@ -157,7 +157,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -219,7 +219,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Collins.mp3",
         "tarotCard": null
     },
     {
@@ -281,7 +281,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -343,7 +343,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/David.mp3",
         "tarotCard": null
     },
     {
@@ -458,7 +458,7 @@
             ]
         },
         "password": "Kanyespenis",
-        "backgroundMusic": "/music/Timi-embedding.mp3",
+        "backgroundMusic": "/Music/Timi-embedding.mp3",
         "tarotCard": {
             "id": "wheel-of-fortune",
             "name": "Wheel of Fortune",
@@ -561,7 +561,7 @@
             ]
         },
         "password": "wearecharliekirk",
-        "backgroundMusic": "/music/emma.mp3",
+        "backgroundMusic": "/Music/emma.mp3",
         "tarotCard": {
             "id": "the-fool",
             "name": "The Fool",
@@ -629,7 +629,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -691,7 +691,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Ire.mp3",
         "tarotCard": null
     },
     {
@@ -753,7 +753,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/kamsi.mp3",
         "tarotCard": null
     },
     {
@@ -815,7 +815,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -877,7 +877,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Maro.mp3",
         "tarotCard": null
     },
     {
@@ -939,7 +939,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Michelle.mp3",
         "tarotCard": null
     },
     {
@@ -1001,7 +1001,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1063,7 +1063,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1176,7 +1176,7 @@
             ]
         },
         "password": "Oorz",
-        "backgroundMusic": "/music/Oluwole.mp3",
+        "backgroundMusic": "/Music/Oluwole.mp3",
         "tarotCard": {
             "id": "the-hermit",
             "name": "The Hermit",
@@ -1187,13 +1187,13 @@
     },
     {
         "id": "priscilla-2025",
-        "recipient": "Priscilla - Lanotlia- Skill-issue",
+        "recipient": "Priscilla - Lanotlia - Skill-issue",
         "initials": "P.",
         "envelope": {
             "color": "#E5D9F2",
             "texture": "watercolor",
             "stamp": {
-                "image": "/stamps/butterfly.png",
+                "image": "/stamps/tree.png",
                 "fallbackColor": "#9C27B0",
                 "position": "top-right",
                 "size": 0.3
@@ -1208,44 +1208,73 @@
                     "id": 1,
                     "type": "intro",
                     "title": "Dear Priscilla,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "content": "I have been thinking about this past year, and even though we did not get to spend as much time together as I would have loved, I still wanted to write this to you. Because distance or fewer moments never changed how deeply I care about you, or how much you mean to me. You are still someone I hold very close to my heart."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "Your Presence",
+                    "content": "Even in the times when we were not talking every day or seeing each other often, you were still present in my thoughts. There are people who fade when life gets busy, but you are not one of those people. You are someone whose presence lingers in the best way, someone whose impact stays even in silence. And I really value that."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "Cherished Moments",
+                    "content": "I cherish the conversations we did have. The check-ins. The random moments. The times we just talked and things felt calm and real again. You bring warmth, peace, and reassurance in a way that feels genuine and grounding, and I appreciate that more than you probably know."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Amélie",
-                        "Spirited Away",
-                        "Moonlight"
-                    ]
+                    "type": "recap",
+                    "title": "I Am Proud of You",
+                    "content": "I am so proud of you. Proud of how much you have grown, how you have handled life, how you have kept becoming stronger, wiser, and more intentional with yourself and your journey. Even from a distance, I have seen your strength, your resilience, your effort to keep evolving. And I admire you deeply for that."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "My Prayer For You",
+                    "content": "As we step into this new year, my prayer for you is that God continues to guide your steps and surround you with peace and clarity. I pray He brings you opportunities that align with your heart, friendships that nourish you, and moments that make you feel seen, appreciated, and safe. I pray your joy deepens, your dreams expand, and everything you are working toward begins to take shape in beautiful and unexpected ways."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "Always Loved",
+                    "content": "I also pray that you never doubt how loved you are. Time and space may shift, but love, care, and respect like this do not disappear. You are someone incredibly special to me, and that will not change."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "With Love",
+                    "content": "I love you, and I am grateful that even with the distance and the quiet stretches, you are still a meaningful part of my life. I hope this year brings you softness, growth, laughter, and peace in every way you deserve. And no matter what, I will always be in your corner, cheering you on."
+                },
+                {
+                    "id": 8,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Priscilla/852bcd1d-6adb-496f-b693-79170cd497ac.jpg",
+                        "/memories/Priscilla/951764AB-0209-4180-B2AD-36FC76D86839.mov",
+                        "/memories/Priscilla/d26d4258-7437-482c-8432-07024c1f9b56.mp4",
+                        "/memories/Priscilla/fbdb542d-7cce-4a7d-804d-786f81d4db95.jpg",
+                        "/memories/Priscilla/filtered-131B71C4-C1BE-470C-9CC1-6AEF37FDA3FB.mp4",
+                        "/tarot/IMG_2474.JPG",
+                        "/tarot/IMG_2464.JPG"
+                    ]
+                },
+                {
+                    "id": 9,
                     "type": "tarot"
                 }
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
+        "backgroundMusic": "/Music/priscilla-main.mp3",
+        "tarotCard": {
+            "id": "queen-of-blades",
+            "name": "The Queen of Blades",
+            "numeral": "Queen",
+            "image": "/tarot/IMG_2442.JPG",
+            "meaning": "The Queen of Blades represents sharp intellect, clear boundaries, and resilience. She cuts through noise to find the truth and stands firm in her power. This year, may you carry her strengthprotecting your peace, trusting your wisdom, and moving with clarity and grace."
+        }
     },
     {
         "id": "quiet-moyin-2025",
@@ -1306,7 +1335,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1368,7 +1397,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1430,7 +1459,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1492,7 +1521,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1554,7 +1583,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
+        "backgroundMusic": "/Music/Vwarak.mp3",
         "tarotCard": null
     }
 ]
