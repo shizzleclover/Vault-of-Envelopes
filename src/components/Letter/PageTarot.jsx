@@ -36,7 +36,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
     }
 
     return (
-        <div className="w-full max-w-md text-center relative min-h-[80vh] flex flex-col items-center justify-center">
+        <div className="w-full max-w-md text-center relative flex flex-col items-center px-4 pb-20">
             {/* Background transition to dark */}
             <motion.div
                 initial={{ opacity: 0 }}
@@ -73,10 +73,10 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="mb-8"
+                className="mb-4"
             >
-                <span className="text-4xl mb-4 block">🔮</span>
-                <h2 className="letter-heading text-2xl md:text-3xl text-cream">
+                <span className="text-3xl mb-2 block">🔮</span>
+                <h2 className="letter-heading text-xl md:text-2xl text-cream">
                     Your Badge for 2026
                 </h2>
             </motion.div>
@@ -97,9 +97,8 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
                 className="relative perspective-1000"
                 style={{ transformStyle: 'preserve-3d' }}
             >
-                {/* Card */}
                 <div
-                    className="relative w-56 h-80 md:w-64 md:h-96 rounded-xl overflow-hidden shadow-2xl"
+                    className="relative w-44 h-64 md:w-52 md:h-72 rounded-xl overflow-hidden shadow-2xl"
                     style={{
                         boxShadow: isRevealed
                             ? `0 0 60px ${accentColor}40, 0 20px 50px rgba(0,0,0,0.5)`
@@ -161,7 +160,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: isRevealed ? 1 : 0, y: isRevealed ? 0 : 20 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="letter-heading text-3xl md:text-4xl text-soft-gold mt-8 mb-4"
+                className="letter-heading text-2xl md:text-3xl text-soft-gold mt-4 mb-2"
             >
                 {tarotCard.name}
             </motion.h3>
@@ -171,7 +170,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: isRevealed ? 1 : 0, y: isRevealed ? 0 : 20 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="letter-body text-cream/80 text-lg leading-relaxed max-w-sm"
+                className="letter-body text-cream/80 text-base leading-relaxed max-w-sm px-2"
             >
                 {tarotCard.meaning}
             </motion.p>
@@ -181,7 +180,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isRevealed ? 1 : 0 }}
                 transition={{ duration: 0.6, delay: 2 }}
-                className="mt-12"
+                className="mt-6"
             >
                 <p className="letter-body text-cream/40 text-sm">
                     With love,

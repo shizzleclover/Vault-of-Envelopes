@@ -11,6 +11,7 @@ import PageMovies from './PageMovies'
 import PageMemories from './PageMemories'
 import PageTarot from './PageTarot'
 import PageMantra from './PageMantra'
+import PageTyping from './PageTyping'
 import { FloatingParticles } from './FloatingDecorations'
 
 
@@ -110,6 +111,8 @@ export default function LetterContainer({ envelope, onClose }) {
                 return <PageTarot {...pageProps} />
             case 'mantra':
                 return <PageMantra {...pageProps} />
+            case 'typing':
+                return <PageTyping {...pageProps} />
             default:
                 return <div className="text-cream">Unknown page type</div>
         }

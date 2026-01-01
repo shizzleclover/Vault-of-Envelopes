@@ -368,45 +368,104 @@
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Timi,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Yo emBeDdings,",
+                    "content": "I have been thinking about this past year and when I look back at everything that happened, your presence stands out in a really special way. I felt like I should not just think it silently, so I wanted to actually write this to you, because you were a real part of my year in a way that mattered deeply to me."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "Our Year Together",
+                    "content": "When I think about our year together, I see late conversations, brainstorming moments, shared curiosity, experiments, effort, small wins, almost wins, tired days, excitement, and growth. And in the middle of all of that, I see you there. I see both of us learning, building, hoping, trying, and still showing up regardless of how things felt at different points."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "Building Together",
+                    "content": "Working with you this year never felt transactional or forced. It felt organic, like two people who genuinely enjoy thinking, creating, and figuring stuff out together. Whether it was projects, hackathons, ideas that turned loud, or dreams that felt bigger than us, there was a sense of shared energy that I really value. You bring a calm intelligence and a grounded curiosity that makes collaboration feel natural."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Whiplash",
-                        "Birdman",
-                        "The Social Network"
-                    ]
+                    "type": "recap",
+                    "title": "Your Growth",
+                    "content": "I respect your commitment to AI and ML a lot. The way you think, research, experiment, and grow is something I genuinely admire. You do not just talk growth, you live inside it. Watching your progress this year made me genuinely proud, not just as your friend, but as someone who believes in who you are becoming. You are carving your own path with intention, and that is something rare."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "The Simple Moments",
+                    "content": "Those times we went out together this year also meant a lot to me. They felt simple, but they were real and refreshing. Sometimes it is easy to forget how meaningful shared presence can be until you pause and look back at it. I really enjoyed those moments, and they are memories I hold fondly."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "Owltech",
+                    "content": "Forming Owltech with you and Olu is something I deeply cherish. It felt like more than just an idea or a label. It felt like foundation. Like the early pages of a story we are still writing. A story that one day we will look back at and smile, knowing that this was where many things truly began. Being able to dream and build alongside you has been one of the most fulfilling parts of my year."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "New Beginnings",
+                    "content": "I am also really happy about something important that happened for you at the end of the year. You asked that girl to be your girlfriend on New Years, and she said yes. That moment made me genuinely happy for you. It felt like a beautiful step in your journey, and I pray it brings you joy, peace, understanding, and growth in the best ways."
+                },
+                {
+                    "id": 8,
+                    "type": "recap",
+                    "title": "Who You Are",
+                    "content": "You have been a solid friend to me. Someone I can talk to about real things. Someone I can work with, think with, laugh with, and still feel comfortable just existing around. Your presence is steady, intentional, and gentle in its own way. I value that, and I value you."
+                },
+                {
+                    "id": 9,
+                    "type": "recap",
+                    "title": "Looking Forward",
+                    "content": "As we step into a new year, I am rooting for you in every sense. I pray 2026 is kind to you. I pray it brings clarity where things feel uncertain, strength where the journey stretches you, and opportunities that match your talent and your heart. I hope your work opens meaningful doors, your creativity keeps expanding, and your life keeps aligning with who you are meant to become."
+                },
+                {
+                    "id": 10,
+                    "type": "recap",
+                    "title": "You Deserve Good Things",
+                    "content": "You deserve good things. Not only because you are smart or hardworking, but because of the person you are. Thoughtful. Curious. Genuine. Steady. Intentional. And real. I am grateful that I got to walk through this year with you as my friend, and I do not take that for granted at all."
+                },
+                {
+                    "id": 11,
+                    "type": "recap",
+                    "title": "Thank You",
+                    "content": "Thank you for every moment we shared this year. The projects, the ideas, the hackathons, the conversations, the laughter, the quiet understanding, and the sense of partnership in growth. You were a real part of my journey, and I sincerely value you.\n\nMore growth ahead. More ideas. More courage. More peace. More life and more stories we will one day look back on together.\n\nyoure still a nigga\n\nYour friend,\nMurewa"
+                },
+                {
+                    "id": 12,
+                    "type": "spotify",
+                    "title": "Your 2026 Vibes",
+                    "playlistUrl": "https://open.spotify.com/embed/playlist/610EfLQnZxs7nhzdYLam0D?utm_source=generator"
+                },
+                {
+                    "id": 13,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Timi/50869caf-c79e-4056-aead-dfb7c7e4f350.jpg",
+                        "/memories/Timi/75901af6-90bb-42b3-b654-a54db5f34853.jpg",
+                        "/memories/Timi/IMG_0273.JPG",
+                        "/memories/Timi/IMG_0688.JPG",
+                        "/memories/Timi/IMG_0690.JPG",
+                        "/memories/Timi/IMG_1303.JPG",
+                        "/memories/Timi/e19a60b0-41eb-47f7-bc45-14f6ef1ecd25.jpg"
+                    ]
+                },
+                {
+                    "id": 14,
                     "type": "tarot"
                 }
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
+        "backgroundMusic": "/Music/Timi-embedding.mp3",
+        "tarotCard": {
+            "id": "wheel-of-fortune",
+            "name": "Wheel of Fortune",
+            "numeral": "X",
+            "image": "/tarot/IMG_2436.JPG",
+            "meaning": "Cycles of change and destiny are in motion. The Wheel reminds you that life is constantly evolving, and this is your year of transformation. Good fortune favors those who embrace change with intention."
+        }
     },
     {
         "id": "ekundis-2025",
@@ -1060,8 +1119,14 @@
                         "/memories/Oluwole/5c93f48d-fd79-4197-b79b-2533bad07b20.jpg",
                         "/memories/Oluwole/IMG_0655.JPG",
                         "/memories/Oluwole/IMG_0749.JPG",
-                        "/memories/Oluwole/IMG_0750.JPG"
+                        "/memories/Oluwole/IMG_0750.JPG",
+                        "/tarot/IMG_2465.JPG"
                     ]
+                },
+                {
+                    "id": 14,
+                    "type": "typing",
+                    "title": "Your MonkeyType Challenge"
                 },
                 {
                     "id": 13,
