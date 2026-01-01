@@ -25,10 +25,10 @@ export default function AudioPlayer({ src }) {
 
     return (
         <>
-            {/* Mute toggle button */}
+            {/* Mute toggle button - positioned bottom left for light backgrounds */}
             <button
                 onClick={toggleMute}
-                className="fixed top-6 right-6 z-50 w-10 h-10 flex items-center justify-center rounded-full bg-cream/10 hover:bg-cream/20 border border-cream/20 transition-all group"
+                className="fixed bottom-6 left-6 z-50 w-10 h-10 flex items-center justify-center rounded-full bg-black/10 hover:bg-black/20 backdrop-blur-md border border-black/10 transition-all group"
                 title={isMuted ? 'Unmute' : 'Mute'}
             >
                 {isMuted ? (
@@ -39,7 +39,7 @@ export default function AudioPlayer({ src }) {
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        className="text-cream/60 group-hover:text-cream transition-colors"
+                        className="text-black/60 group-hover:text-black transition-colors"
                     >
                         <path d="M11 5L6 9H2v6h4l5 4V5z" />
                         <line x1="23" y1="9" x2="17" y2="15" />
@@ -53,7 +53,7 @@ export default function AudioPlayer({ src }) {
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        className="text-cream/60 group-hover:text-cream transition-colors"
+                        className="text-black/60 group-hover:text-black transition-colors"
                     >
                         <path d="M11 5L6 9H2v6h4l5 4V5z" />
                         <path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" />

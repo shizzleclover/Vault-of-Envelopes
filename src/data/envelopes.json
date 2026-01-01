@@ -1,27 +1,126 @@
 [
     {
-        "id": "ire-2025",
-        "recipient": "Iretomiwa Akande Victoria",
-        "initials": "IA",
+        "id": "anjola-2025",
+        "recipient": "Anjola - Oscroh Og",
+        "initials": "A.",
         "envelope": {
-            "color": "#FFE5D9",
-            "texture": "linen",
+            "color": "#FFF4CC",
+            "texture": "watercolor",
             "stamp": {
-                "image": "/stamps/music-note.png",
-                "fallbackColor": "#FF6B6B",
+                "image": "/stamps/IMG_2447.JPG",
+                "fallbackColor": "#FFC107",
                 "position": "top-right",
                 "size": 0.3
             }
         },
         "letter": {
-            "paperTexture": "vintage-cream",
-            "fontPairing": "classic",
-            "accentColor": "#FF6B6B",
+            "paperTexture": "golden-hour",
+            "fontPairing": "romantic",
+            "accentColor": "#FFC107",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Ire,",
+                    "title": "Wagwan Oscroh,",
+                    "content": "I have been thinking about this past year and I realized I could not look back without appreciating you properly. You have been more than just a friend. You have been someone I could talk to honestly, laugh with, think out loud with, and just be myself around. That means a lot to me, and I do not take it for granted at all."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "title": "What You Mean To Me",
+                    "content": "There were moments this year that would have felt heavier or lonelier if you were not around, whether it was through our random conversations, your advice, shared jokes, or just your presence. You have shown consistency, loyalty, and a kind of quiet support that many people do not know how to give. You are the type of person who makes life feel a little lighter, and I am genuinely grateful for that."
+                },
+                {
+                    "id": 3,
+                    "type": "recap",
+                    "title": "Your Impact",
+                    "content": "I respect the way you think, the way you handle situations, and the kind of person you are growing into. You inspire me in your own way through your mindset, your resilience, and the way you always try to be better. You have had a real impact on my year, even in ways you may not fully realize."
+                },
+                {
+                    "id": 4,
+                    "type": "recap",
+                    "title": "Thank You",
+                    "content": "Thank you for the times you checked in, the times you listened, the times you challenged me, and the times we just laughed about nonsense. Thank you for showing up as a real friend, not just when things were fun, but when they were uncertain too. People like you are rare, and I am genuinely glad our paths crossed."
+                },
+                {
+                    "id": 5,
+                    "type": "recap",
+                    "title": "Looking Forward",
+                    "content": "As we move into a new year, I am rooting for you. Your growth, your wins, your peace, and everything you are working towards. I pray you find clarity where you need it, strength when things get tough, and joy in the small moments along the way. You deserve good things, and I hope this year brings you even more of them."
+                },
+                {
+                    "id": 6,
+                    "type": "recap",
+                    "title": "With Gratitude",
+                    "content": "I appreciate you deeply, bro. Thanks for being you, and thanks for being a solid part of my life this past year. More life, more growth, and more moments ahead.\\n\\n Murewa"
+                },
+                {
+                    "id": 7,
+                    "type": "spotify",
+                    "title": "Your 2026 Vibes",
+                    "playlistUrl": "https://open.spotify.com/embed/playlist/4GIl3B0G8JYxBKof1YiyZO?utm_source=generator"
+                },
+                {
+                    "id": 8,
+                    "type": "movies",
+                    "title": "Movies for 2026",
+                    "list": [
+                        "Saltburn",
+                        "The Killing of a Sacred Deer",
+                        "Nightcrawler",
+                        "Prisoners"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Anjola/IMG_2462.JPG",
+                        "/memories/Anjola/IMG_2481.JPG",
+                        "/memories/Anjola/IMG_2482.JPG",
+                        "/memories/Anjola/IMG_2483.JPG"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/Music/Oscroh.mp3",
+        "tarotCard": {
+            "id": "the-lovers",
+            "name": "The Lovers",
+            "numeral": "XVI",
+            "image": "/tarot/IMG_2441.JPG",
+            "meaning": "The Lovers card represents alignment, loyalty, and meaningful connections the kind of bond that helps you grow and stay grounded. When I think of our friendship, it reminds me of that energy. You’ve been someone I can trust and be real with, and I really value the presence and clarity you bring into my life./nFor 2026, I pray it becomes a Lovers-card kind of year for you: a year of good decisions, the right people around you, peace in your journey, and opportunities that align with your purpose and values. May every choice you make lead you closer to the life you’re building, and may your relationships bring you strength, clarity, and joy.\nI appreciate you, and I’m rooting for everything ahead of you this year"
+        }
+    },
+    {
+        "id": "boma-2025",
+        "recipient": "Boma - Teletubby",
+        "initials": "Bo.",
+        "envelope": {
+            "color": "#FFE5CC",
+            "texture": "parchment",
+            "stamp": {
+                "image": "/stamps/coffee.png",
+                "fallbackColor": "#795548",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "coffee-stained",
+            "fontPairing": "literary",
+            "accentColor": "#5D4037",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Boma,",
                     "content": "As we step into 2025, I wanted to share some thoughts with you..."
                 },
                 {
@@ -40,9 +139,133 @@
                     "type": "movies",
                     "title": "Movies We'll Watch",
                     "list": [
-                        "Interstellar",
-                        "Her",
-                        "The Grand Budapest Hotel"
+                        "Coffee and Cigarettes",
+                        "Before Sunrise",
+                        "Paterson"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "collins-2025",
+        "recipient": "Collins - What a nigga",
+        "initials": "C.",
+        "envelope": {
+            "color": "#F0FFE5",
+            "texture": "handmade",
+            "stamp": {
+                "image": "/stamps/globe.png",
+                "fallbackColor": "#4CAF50",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "torn-edges",
+            "fontPairing": "contrast",
+            "accentColor": "#388E3C",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Collins,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "The Way",
+                        "Eat Pray Love",
+                        "Under the Tuscan Sun"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "crossmen-2025",
+        "recipient": "Crossmen - A group of fags and femboys",
+        "initials": "X",
+        "envelope": {
+            "color": "#FFE1F4",
+            "texture": "canvas",
+            "stamp": {
+                "image": "/stamps/plane.png",
+                "fallbackColor": "#03A9F4",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "watercolor-wash",
+            "fontPairing": "bold-classic",
+            "accentColor": "#03A9F4",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Crossmen,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you all..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of adventures, inside jokes, and unforgettable moments. This crew is legendary."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Squad 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "The Hangover",
+                        "Superbad",
+                        "21 Jump Street"
                     ]
                 },
                 {
@@ -105,440 +328,6 @@
                         "The Shawshank Redemption",
                         "Inception",
                         "The Dark Knight"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "vwarak-2025",
-        "recipient": "Vwarak - Very rugged man from plateau ",
-        "initials": "V.",
-        "envelope": {
-            "color": "#C7E9FB",
-            "texture": "smooth",
-            "stamp": {
-                "image": "/stamps/compass.png",
-                "fallbackColor": "#3498DB",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "sky-whisper",
-            "fontPairing": "modern-serif",
-            "accentColor": "#3498DB",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Vwarak,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Arrival",
-                        "Blade Runner 2049",
-                        "Dune"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "tolu-2025",
-        "recipient": "Toluwani Aderinto(My mum kinda homeless)",
-        "initials": "T.",
-        "envelope": {
-            "color": "#FFD6E8",
-            "texture": "watercolor",
-            "stamp": {
-                "image": "/stamps/heart.png",
-                "fallbackColor": "#E91E63",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "soft-blush",
-            "fontPairing": "romantic",
-            "accentColor": "#E91E63",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Tolu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "La La Land",
-                        "Pride & Prejudice",
-                        "Little Women"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "tolu-bu-2025",
-        "recipient": "Tolu Bu(My daily 2k sponsor)",
-        "initials": "T.B.",
-        "envelope": {
-            "color": "#FFF4CC",
-            "texture": "linen",
-            "stamp": {
-                "image": "/stamps/sun.png",
-                "fallbackColor": "#FF9800",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "golden-hour",
-            "fontPairing": "soft",
-            "accentColor": "#FF9800",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Tolu Bu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Soul",
-                        "Coco",
-                        "Up"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "priscilla-2025",
-        "recipient": "Priscilla - Lanotlia- Skill-issue",
-        "initials": "P.",
-        "envelope": {
-            "color": "#E5D9F2",
-            "texture": "watercolor",
-            "stamp": {
-                "image": "/stamps/butterfly.png",
-                "fallbackColor": "#9C27B0",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "lavender-haze",
-            "fontPairing": "romantic",
-            "accentColor": "#9B7EBD",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Priscilla,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Amélie",
-                        "Spirited Away",
-                        "Moonlight"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "olu-2025",
-        "recipient": "Oluwole Afolabi (My man, my love, oorz)",
-        "initials": "O.",
-        "envelope": {
-            "color": "#D9F2E6",
-            "texture": "cotton",
-            "stamp": {
-                "image": "/stamps/anchor.png",
-                "fallbackColor": "#37474F",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "smooth-white",
-            "fontPairing": "clean",
-            "accentColor": "#37474F",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Olu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Godfather",
-                        "Goodfellas",
-                        "Scarface"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "obalabi-2025",
-        "recipient": "Obalabi - My second Labubu",
-        "initials": "O.B.",
-        "envelope": {
-            "color": "#FFE4E1",
-            "texture": "parchment",
-            "stamp": {
-                "image": "/stamps/flame.png",
-                "fallbackColor": "#FF5722",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "parchment",
-            "fontPairing": "literary",
-            "accentColor": "#FF5722",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Obalabi,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Fight Club",
-                        "Pulp Fiction",
-                        "The Matrix"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "michelle-2025",
-        "recipient": "Michelle - Tessie",
-        "initials": "M.",
-        "envelope": {
-            "color": "#FFF0F5",
-            "texture": "cotton",
-            "stamp": {
-                "image": "/stamps/flower.png",
-                "fallbackColor": "#E91E63",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "soft-blush",
-            "fontPairing": "romantic",
-            "accentColor": "#E91E63",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Michelle,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Notebook",
-                        "A Walk to Remember",
-                        "Me Before You"
                     ]
                 },
                 {
@@ -682,6 +471,192 @@
         "tarotCard": null
     },
     {
+        "id": "investment-banking-2025",
+        "recipient": "Investment Banking -  If and when but never is",
+        "initials": "IB",
+        "envelope": {
+            "color": "#D5F4E6",
+            "texture": "smooth",
+            "stamp": {
+                "image": "/stamps/IMG_2457.JPG",
+                "fallbackColor": "#D4AF37",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "smooth-white",
+            "fontPairing": "clean",
+            "accentColor": "#D4AF37",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Investment Banking Team,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you all..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of hustle, late nights, and incredible wins. Through it all, this team showed what it means to deliver excellence."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Team 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "The Big Short",
+                        "Margin Call",
+                        "Wolf of Wall Street"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "ire-2025",
+        "recipient": "Iretomiwa Akande Victoria",
+        "initials": "IA",
+        "envelope": {
+            "color": "#FFE5D9",
+            "texture": "linen",
+            "stamp": {
+                "image": "/stamps/music-note.png",
+                "fallbackColor": "#FF6B6B",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "vintage-cream",
+            "fontPairing": "classic",
+            "accentColor": "#FF6B6B",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Ire,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "Interstellar",
+                        "Her",
+                        "The Grand Budapest Hotel"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "kamsi-2025",
+        "recipient": "Kamsi - It is well",
+        "initials": "Ka.",
+        "envelope": {
+            "color": "#E8F4EA",
+            "texture": "handmade",
+            "stamp": {
+                "image": "/stamps/IMG_2448.JPG",
+                "fallbackColor": "#8BC34A",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "torn-edges",
+            "fontPairing": "narrative",
+            "accentColor": "#689F38",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Kamsi,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "The Secret Life of Walter Mitty",
+                        "Forrest Gump",
+                        "Big Fish"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
         "id": "light-2025",
         "recipient": "Light ",
         "initials": "L.",
@@ -744,316 +719,6 @@
         "tarotCard": null
     },
     {
-        "id": "kehinde-2025",
-        "recipient": "Kehinde",
-        "initials": "K.",
-        "envelope": {
-            "color": "#FFF0C4",
-            "texture": "linen",
-            "stamp": {
-                "image": "/stamps/crown.png",
-                "fallbackColor": "#D4AF37",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "vintage-cream",
-            "fontPairing": "bold-classic",
-            "accentColor": "#D4AF37",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Kehinde,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Black Panther",
-                        "The Lion King",
-                        "Coming to America"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "cyclops-moyin-2025",
-        "recipient": "Cyclops Moyin",
-        "initials": "C.M.",
-        "envelope": {
-            "color": "#E6F3FF",
-            "texture": "smooth",
-            "stamp": {
-                "image": "/stamps/diamond.png",
-                "fallbackColor": "#00BCD4",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "smooth-white",
-            "fontPairing": "sleek",
-            "accentColor": "#00BCD4",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Cyclops Moyin,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "X-Men: Days of Future Past",
-                        "Logan",
-                        "Deadpool"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "quiet-moyin-2025",
-        "recipient": "Quiet Moyin",
-        "initials": "Q.M.",
-        "envelope": {
-            "color": "#F5E6FF",
-            "texture": "cotton",
-            "stamp": {
-                "image": "/stamps/moon.png",
-                "fallbackColor": "#9E9E9E",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "lavender-haze",
-            "fontPairing": "understated",
-            "accentColor": "#673AB7",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Quiet Moyin,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Lost in Translation",
-                        "Her",
-                        "Eternal Sunshine"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "anjola-2025",
-        "recipient": "Anjola - Oscroh Og",
-        "initials": "A.",
-        "envelope": {
-            "color": "#FFF4CC",
-            "texture": "watercolor",
-            "stamp": {
-                "image": "/stamps/star.png",
-                "fallbackColor": "#FFC107",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "golden-hour",
-            "fontPairing": "romantic",
-            "accentColor": "#FFC107",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Anjola,",
-                    "content": " I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "A Star Is Born",
-                        "La La Land",
-                        "Rocketman"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "kamsi-2025",
-        "recipient": "Kamsi - It is well",
-        "initials": "Ka.",
-        "envelope": {
-            "color": "#E8F4EA",
-            "texture": "handmade",
-            "stamp": {
-                "image": "/stamps/feather.png",
-                "fallbackColor": "#8BC34A",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "torn-edges",
-            "fontPairing": "narrative",
-            "accentColor": "#689F38",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Kamsi,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Secret Life of Walter Mitty",
-                        "Forrest Gump",
-                        "Big Fish"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
         "id": "maro-2025",
         "recipient": "Maro - humangasour",
         "initials": "Ma.",
@@ -1061,7 +726,7 @@
             "color": "#FFE8D1",
             "texture": "parchment",
             "stamp": {
-                "image": "/stamps/paintbrush.png",
+                "image": "/stamps/IMG_2449.JPG",
                 "fallbackColor": "#9B59B6",
                 "position": "top-right",
                 "size": 0.3
@@ -1116,28 +781,90 @@
         "tarotCard": null
     },
     {
-        "id": "josh-2025",
-        "recipient": "Josh - Igbo Kwenu",
-        "initials": "J.",
+        "id": "michelle-2025",
+        "recipient": "Michelle - Tessie",
+        "initials": "M.",
         "envelope": {
-            "color": "#D9E5FF",
-            "texture": "smooth",
+            "color": "#FFF0F5",
+            "texture": "cotton",
             "stamp": {
-                "image": "/stamps/rocket.png",
+                "image": "/stamps/Michelle.JPG",
+                "fallbackColor": "#E91E63",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "soft-blush",
+            "fontPairing": "romantic",
+            "accentColor": "#E91E63",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Michelle,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "The Notebook",
+                        "A Walk to Remember",
+                        "Me Before You"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "obalabi-2025",
+        "recipient": "Obalabi - My second Labubu",
+        "initials": "O.B.",
+        "envelope": {
+            "color": "#FFE4E1",
+            "texture": "parchment",
+            "stamp": {
+                "image": "/stamps/flame.png",
                 "fallbackColor": "#FF5722",
                 "position": "top-right",
                 "size": 0.3
             }
         },
         "letter": {
-            "paperTexture": "smooth-white",
-            "fontPairing": "sleek",
+            "paperTexture": "parchment",
+            "fontPairing": "literary",
             "accentColor": "#FF5722",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Josh,",
+                    "title": "Dear Obalabi,",
                     "content": "As we step into 2025, I wanted to share some thoughts with you..."
                 },
                 {
@@ -1156,195 +883,9 @@
                     "type": "movies",
                     "title": "Movies We'll Watch",
                     "list": [
-                        "The Martian",
-                        "Gravity",
-                        "Ad Astra"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "bolu-2025",
-        "recipient": "Bolu - It is well",
-        "initials": "B.",
-        "envelope": {
-            "color": "#FFE9E1",
-            "texture": "canvas",
-            "stamp": {
-                "image": "/stamps/book.png",
-                "fallbackColor": "#6D4C41",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "lined-notebook",
-            "fontPairing": "literary",
-            "accentColor": "#6D4C41",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Bolu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Dead Poets Society",
-                        "Good Will Hunting",
-                        "A Beautiful Mind"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "tutu-2025",
-        "recipient": "Tutu - Tiolu",
-        "initials": "Tu.",
-        "envelope": {
-            "color": "#E1FFF0",
-            "texture": "watercolor",
-            "stamp": {
-                "image": "/stamps/bird.png",
-                "fallbackColor": "#00BCD4",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "sage-mist",
-            "fontPairing": "soft",
-            "accentColor": "#009688",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Tutu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Winged Migration",
-                        "March of the Penguins",
-                        "Free Solo"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "bassey-2025",
-        "recipient": "Bassey",
-        "initials": "Ba.",
-        "envelope": {
-            "color": "#FFF0E5",
-            "texture": "kraft",
-            "stamp": {
-                "image": "/stamps/wave.png",
-                "fallbackColor": "#2196F3",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "coffee-stained",
-            "fontPairing": "editorial",
-            "accentColor": "#1976D2",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Bassey,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Lighthouse",
-                        "Master and Commander",
-                        "Life of Pi"
+                        "Fight Club",
+                        "Pulp Fiction",
+                        "The Matrix"
                     ]
                 },
                 {
@@ -1371,7 +912,7 @@
             "color": "#E5F0FF",
             "texture": "linen",
             "stamp": {
-                "image": "/stamps/microphone.png",
+                "image": "/stamps/IMG_2455.JPG",
                 "fallbackColor": "#E74C3C",
                 "position": "top-right",
                 "size": 0.3
@@ -1426,6 +967,192 @@
         "tarotCard": null
     },
     {
+        "id": "olu-2025",
+        "recipient": "Oluwole Afolabi (My man, my love, oorz)",
+        "initials": "O.",
+        "envelope": {
+            "color": "#D9F2E6",
+            "texture": "cotton",
+            "stamp": {
+                "image": "/stamps/anchor.png",
+                "fallbackColor": "#37474F",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "smooth-white",
+            "fontPairing": "clean",
+            "accentColor": "#37474F",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Olu,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "The Godfather",
+                        "Goodfellas",
+                        "Scarface"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "priscilla-2025",
+        "recipient": "Priscilla - Lanotlia- Skill-issue",
+        "initials": "P.",
+        "envelope": {
+            "color": "#E5D9F2",
+            "texture": "watercolor",
+            "stamp": {
+                "image": "/stamps/butterfly.png",
+                "fallbackColor": "#9C27B0",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "lavender-haze",
+            "fontPairing": "romantic",
+            "accentColor": "#9B7EBD",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Priscilla,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "Amélie",
+                        "Spirited Away",
+                        "Moonlight"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
+        "id": "quiet-moyin-2025",
+        "recipient": "Quiet Moyin",
+        "initials": "Q.M.",
+        "envelope": {
+            "color": "#F5E6FF",
+            "texture": "cotton",
+            "stamp": {
+                "image": "/stamps/IMG_2446.JPG",
+                "fallbackColor": "#9E9E9E",
+                "position": "top-right",
+                "size": 0.3
+            }
+        },
+        "letter": {
+            "paperTexture": "lavender-haze",
+            "fontPairing": "understated",
+            "accentColor": "#673AB7",
+            "pages": [
+                {
+                    "id": 1,
+                    "type": "intro",
+                    "title": "Dear Quiet Moyin,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                },
+                {
+                    "id": 2,
+                    "type": "recap",
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                },
+                {
+                    "id": 3,
+                    "type": "spotify",
+                    "title": "Your 2025 Vibes",
+                    "playlistUrl": ""
+                },
+                {
+                    "id": 4,
+                    "type": "movies",
+                    "title": "Movies We'll Watch",
+                    "list": [
+                        "Lost in Translation",
+                        "Her",
+                        "Eternal Sunshine"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "type": "memories",
+                    "title": "Highlights",
+                    "images": []
+                },
+                {
+                    "id": 6,
+                    "type": "tarot"
+                }
+            ]
+        },
+        "password": "placeholder",
+        "backgroundMusic": "/music/demo.mp3",
+        "tarotCard": null
+    },
+    {
         "id": "raymond-2025",
         "recipient": "Raymond - Uncle Ray Ray",
         "initials": "R.",
@@ -1433,7 +1160,7 @@
             "color": "#FFE5F1",
             "texture": "cotton",
             "stamp": {
-                "image": "/stamps/key.png",
+                "image": "/stamps/IMG_2456.JPG",
                 "fallbackColor": "#8D6E63",
                 "position": "top-right",
                 "size": 0.3
@@ -1488,28 +1215,28 @@
         "tarotCard": null
     },
     {
-        "id": "collins-2025",
-        "recipient": "Collins - What a nigga",
-        "initials": "C.",
+        "id": "tolu-bu-2025",
+        "recipient": "Tolu Bu(My daily 2k sponsor)",
+        "initials": "T.B.",
         "envelope": {
-            "color": "#F0FFE5",
-            "texture": "handmade",
+            "color": "#FFF4CC",
+            "texture": "linen",
             "stamp": {
-                "image": "/stamps/globe.png",
-                "fallbackColor": "#4CAF50",
+                "image": "/stamps/sun.png",
+                "fallbackColor": "#FF9800",
                 "position": "top-right",
                 "size": 0.3
             }
         },
         "letter": {
-            "paperTexture": "torn-edges",
-            "fontPairing": "contrast",
-            "accentColor": "#388E3C",
+            "paperTexture": "golden-hour",
+            "fontPairing": "soft",
+            "accentColor": "#FF9800",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Collins,",
+                    "title": "Dear Tolu Bu,",
                     "content": "As we step into 2025, I wanted to share some thoughts with you..."
                 },
                 {
@@ -1528,9 +1255,9 @@
                     "type": "movies",
                     "title": "Movies We'll Watch",
                     "list": [
-                        "The Way",
-                        "Eat Pray Love",
-                        "Under the Tuscan Sun"
+                        "Soul",
+                        "Coco",
+                        "Up"
                     ]
                 },
                 {
@@ -1550,28 +1277,28 @@
         "tarotCard": null
     },
     {
-        "id": "boma-2025",
-        "recipient": "Boma - Teletubby",
-        "initials": "Bo.",
+        "id": "tolu-2025",
+        "recipient": "Toluwani Aderinto(My mum kinda homeless)",
+        "initials": "T.",
         "envelope": {
-            "color": "#FFE5CC",
-            "texture": "parchment",
+            "color": "#FFD6E8",
+            "texture": "watercolor",
             "stamp": {
-                "image": "/stamps/coffee.png",
-                "fallbackColor": "#795548",
+                "image": "/stamps/heart.png",
+                "fallbackColor": "#E91E63",
                 "position": "top-right",
                 "size": 0.3
             }
         },
         "letter": {
-            "paperTexture": "coffee-stained",
-            "fontPairing": "literary",
-            "accentColor": "#5D4037",
+            "paperTexture": "soft-blush",
+            "fontPairing": "romantic",
+            "accentColor": "#E91E63",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Boma,",
+                    "title": "Dear Tolu,",
                     "content": "As we step into 2025, I wanted to share some thoughts with you..."
                 },
                 {
@@ -1590,9 +1317,9 @@
                     "type": "movies",
                     "title": "Movies We'll Watch",
                     "list": [
-                        "Coffee and Cigarettes",
-                        "Before Sunrise",
-                        "Paterson"
+                        "La La Land",
+                        "Pride & Prejudice",
+                        "Little Women"
                     ]
                 },
                 {
@@ -1612,39 +1339,39 @@
         "tarotCard": null
     },
     {
-        "id": "investment-banking-2025",
-        "recipient": "Investment Banking -  If and when but never is",
-        "initials": "IB",
+        "id": "vwarak-2025",
+        "recipient": "Vwarak - Very rugged man from plateau ",
+        "initials": "V.",
         "envelope": {
-            "color": "#D5F4E6",
+            "color": "#C7E9FB",
             "texture": "smooth",
             "stamp": {
-                "image": "/stamps/hourglass.png",
-                "fallbackColor": "#D4AF37",
+                "image": "/stamps/compass.png",
+                "fallbackColor": "#3498DB",
                 "position": "top-right",
                 "size": 0.3
             }
         },
         "letter": {
-            "paperTexture": "smooth-white",
-            "fontPairing": "clean",
-            "accentColor": "#D4AF37",
+            "paperTexture": "sky-whisper",
+            "fontPairing": "modern-serif",
+            "accentColor": "#3498DB",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Investment Banking Team,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you all..."
+                    "title": "Dear Vwarak,",
+                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of hustle, late nights, and incredible wins. Through it all, this team showed what it means to deliver excellence."
+                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
                 },
                 {
                     "id": 3,
                     "type": "spotify",
-                    "title": "Team 2025 Vibes",
+                    "title": "Your 2025 Vibes",
                     "playlistUrl": ""
                 },
                 {
@@ -1652,71 +1379,9 @@
                     "type": "movies",
                     "title": "Movies We'll Watch",
                     "list": [
-                        "The Big Short",
-                        "Margin Call",
-                        "Wolf of Wall Street"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
-                },
-                {
-                    "id": 6,
-                    "type": "tarot"
-                }
-            ]
-        },
-        "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
-    },
-    {
-        "id": "crossmen-2025",
-        "recipient": "Crossmen - A group of fags and femboys",
-        "initials": "X",
-        "envelope": {
-            "color": "#FFE1F4",
-            "texture": "canvas",
-            "stamp": {
-                "image": "/stamps/plane.png",
-                "fallbackColor": "#03A9F4",
-                "position": "top-right",
-                "size": 0.3
-            }
-        },
-        "letter": {
-            "paperTexture": "watercolor-wash",
-            "fontPairing": "bold-classic",
-            "accentColor": "#03A9F4",
-            "pages": [
-                {
-                    "id": 1,
-                    "type": "intro",
-                    "title": "Dear Crossmen,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you all..."
-                },
-                {
-                    "id": 2,
-                    "type": "recap",
-                    "content": "2024 was a year of adventures, inside jokes, and unforgettable moments. This crew is legendary."
-                },
-                {
-                    "id": 3,
-                    "type": "spotify",
-                    "title": "Squad 2025 Vibes",
-                    "playlistUrl": ""
-                },
-                {
-                    "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Hangover",
-                        "Superbad",
-                        "21 Jump Street"
+                        "Arrival",
+                        "Blade Runner 2049",
+                        "Dune"
                     ]
                 },
                 {

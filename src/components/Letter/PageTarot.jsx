@@ -77,7 +77,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
             >
                 <span className="text-4xl mb-4 block">🔮</span>
                 <h2 className="letter-heading text-2xl md:text-3xl text-cream">
-                    Your Card for 2025
+                    Your Badge for 2026
                 </h2>
             </motion.div>
 
@@ -187,7 +187,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
                     With love,
                 </p>
                 <p className="letter-heading text-cream/60 text-lg mt-1">
-                    ✨ 2025 ✨
+                    ✨ 2026 ✨
                 </p>
             </motion.div>
         </div>

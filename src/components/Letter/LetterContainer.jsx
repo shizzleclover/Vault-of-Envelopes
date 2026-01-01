@@ -11,6 +11,7 @@ import PageMovies from './PageMovies'
 import PageMemories from './PageMemories'
 import PageTarot from './PageTarot'
 import PageMantra from './PageMantra'
+import { FloatingParticles } from './FloatingDecorations'
 
 
 export default function LetterContainer({ envelope, onClose }) {
@@ -32,18 +33,28 @@ export default function LetterContainer({ envelope, onClose }) {
         setCurrentPage(newPage)
     }, [currentPage, pages.length])
 
-    // Handle swipe gestures
-    const bind = useDrag(({ active, movement: [, my], direction: [, yDir], cancel }) => {
-        if (!active && Math.abs(my) > 50) {
-            if (my < 0 && currentPage < pages.length - 1) {
-                goToPage(currentPage + 1)
-            } else if (my > 0 && currentPage > 0) {
-                goToPage(currentPage - 1)
+    // Handle swipe gestures - improved sensitivity
+    const bind = useDrag(({ active, movement: [mx, my], velocity: [vx, vy], direction: [dx, dy] }) => {
+        // Use velocity for snappier navigation
+        const swipeThreshold = 30
+        const velocityThreshold = 0.3
+
+        if (!active) {
+            // Check both distance and velocity for better detection
+            const shouldNavigate = Math.abs(my) > swipeThreshold || Math.abs(vy) > velocityThreshold
+
+            if (shouldNavigate) {
+                if ((my < 0 || vy > velocityThreshold) && currentPage < pages.length - 1) {
+                    goToPage(currentPage + 1)
+                } else if ((my > 0 || vy < -velocityThreshold) && currentPage > 0) {
+                    goToPage(currentPage - 1)
+                }
             }
         }
     }, {
         axis: 'y',
         filterTaps: true,
+        threshold: 10,
     })
 
     // Render page based on type
@@ -77,29 +88,37 @@ export default function LetterContainer({ envelope, onClose }) {
         }
     }
 
-    // Smoother Transitions
+    // Smoother, more luxurious transitions
     const pageVariants = {
         enter: (direction) => ({
-            y: direction > 0 ? '100%' : '-100%',
+            y: direction > 0 ? '80%' : '-80%',
             opacity: 0,
-            scale: 0.95,
+            scale: 0.9,
+            rotateX: direction > 0 ? -15 : 15,
+            filter: 'blur(10px)',
         }),
         center: {
             y: 0,
             opacity: 1,
             scale: 1,
+            rotateX: 0,
+            filter: 'blur(0px)',
         },
         exit: (direction) => ({
-            y: direction < 0 ? '100%' : '-100%',
+            y: direction < 0 ? '80%' : '-80%',
             opacity: 0,
-            scale: 0.95,
+            scale: 0.9,
+            rotateX: direction < 0 ? -15 : 15,
+            filter: 'blur(10px)',
         }),
     }
 
     const transition = {
-        y: { type: 'spring', stiffness: 200, damping: 25 },
-        opacity: { duration: 0.3 },
-        scale: { duration: 0.3 }
+        y: { type: 'spring', stiffness: 100, damping: 20, mass: 0.8 },
+        opacity: { duration: 0.4, ease: 'easeInOut' },
+        scale: { type: 'spring', stiffness: 150, damping: 25 },
+        rotateX: { type: 'spring', stiffness: 100, damping: 20 },
+        filter: { duration: 0.3 }
     }
 
     return (
@@ -112,6 +131,8 @@ export default function LetterContainer({ envelope, onClose }) {
             }}
             {...bind()}
         >
+            {/* Ambient floating particles */}
+            <FloatingParticles accentColor={accentColor} count={6} />
             {/* CSS variables for fonts */}
             <style>{`
         .letter-container {
@@ -165,23 +186,48 @@ export default function LetterContainer({ envelope, onClose }) {
                 </AnimatePresence>
             </div>
 
-            {/* Progress dots */}
-            <div className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-50 bg-black/5 px-2 py-4 rounded-full backdrop-blur-md">
+            {/* Progress dots - hidden on mobile, visible on desktop */}
+            <div className="fixed right-2 top-1/2 -translate-y-1/2 flex-col gap-2 z-50 hidden md:flex">
                 {pages.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => goToPage(index)}
-                        className={`transition-all duration-300 ${index === currentPage
-                            ? 'w-2 h-8 rounded-full'
-                            : 'w-2 h-2 rounded-full hover:scale-125' // Vertical active indicator
+                        className={`transition-all duration-300 rounded-full ${index === currentPage
+                            ? 'w-1.5 h-6'
+                            : 'w-1.5 h-1.5 hover:scale-150 opacity-50 hover:opacity-100'
                             }`}
                         style={{
                             backgroundColor: index === currentPage
                                 ? accentColor
-                                : 'rgba(0,0,0,0.2)',
+                                : 'rgba(0,0,0,0.3)',
                         }}
                     />
                 ))}
+            </div>
+
+            {/* Mobile navigation buttons */}
+            <div className="fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4 z-50 md:hidden">
+                <button
+                    onClick={() => goToPage(currentPage - 1)}
+                    disabled={currentPage === 0}
+                    className="w-10 h-10 rounded-full bg-black/10 backdrop-blur-md flex items-center justify-center disabled:opacity-30 transition-all"
+                >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <span className="text-sm font-medium text-black/50">
+                    {currentPage + 1} / {pages.length}
+                </span>
+                <button
+                    onClick={() => goToPage(currentPage + 1)}
+                    disabled={currentPage === pages.length - 1}
+                    className="w-10 h-10 rounded-full bg-black/10 backdrop-blur-md flex items-center justify-center disabled:opacity-30 transition-all"
+                >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
             </div>
 
             {/* Page counter */}

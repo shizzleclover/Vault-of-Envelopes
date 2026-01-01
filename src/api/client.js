@@ -1,13 +1,21 @@
 import axios from 'axios';
 
+// Import local data for offline fallback
+import localEnvelopes from '../data/envelopes.json';
+import localTarotCards from '../data/tarotCards.json';
+
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+
+// Flag to use local data only (set to true to skip API calls entirely)
+const USE_LOCAL_DATA = true;
 
 // Create axios instance
 const apiClient = axios.create({
     baseURL: API_URL,
     headers: {
         'Content-Type': 'application/json'
-    }
+    },
+    timeout: 5000 // 5 second timeout
 });
 
 // Add auth token to requests
@@ -23,29 +31,81 @@ apiClient.interceptors.request.use((config) => {
 export const api = {
     // Envelopes
     async fetchEnvelopes() {
-        const { data } = await apiClient.get('/envelopes');
-        return data;
+        // Use local data if flag is set or as fallback
+        if (USE_LOCAL_DATA) {
+            console.log('📦 Loading envelopes from local data');
+            return localEnvelopes;
+        }
+
+        try {
+            const { data } = await apiClient.get('/envelopes');
+            return data;
+        } catch (error) {
+            console.warn('⚠️ API unavailable, using local envelope data:', error.message);
+            return localEnvelopes;
+        }
     },
 
     async fetchEnvelope(id) {
-        const { data } = await apiClient.get(`/envelopes/${id}`);
-        return data;
+        // Use local data if flag is set or as fallback
+        if (USE_LOCAL_DATA) {
+            const envelope = localEnvelopes.find(e => e.id === id);
+            return envelope || null;
+        }
+
+        try {
+            const { data } = await apiClient.get(`/envelopes/${id}`);
+            return data;
+        } catch (error) {
+            console.warn('⚠️ API unavailable, using local envelope data:', error.message);
+            const envelope = localEnvelopes.find(e => e.id === id);
+            return envelope || null;
+        }
     },
 
+    // Password verification is done locally in PasswordPrompt.jsx
+    // This method is kept for compatibility but uses local data
     async verifyPassword(envelopeId, password) {
-        const { data } = await apiClient.post(`/envelopes/${envelopeId}/verify-password`, { password });
-        return data.valid;
+        const envelope = localEnvelopes.find(e => e.id === envelopeId);
+        return envelope && envelope.password === password;
     },
 
     // Tarot
     async fetchTarotCards() {
-        const { data } = await apiClient.get('/tarot');
-        return data;
+        // Convert object to array format
+        const cardsArray = Object.values(localTarotCards);
+
+        if (USE_LOCAL_DATA) {
+            console.log('🃏 Loading tarot cards from local data');
+            return cardsArray;
+        }
+
+        try {
+            const { data } = await apiClient.get('/tarot');
+            return data;
+        } catch (error) {
+            console.warn('⚠️ API unavailable, using local tarot data:', error.message);
+            return cardsArray;
+        }
     },
 
     async fetchRandomTarotCard() {
-        const { data } = await apiClient.get('/tarot/random/pick');
-        return data;
+        // Convert object to array for random selection
+        const cardsArray = Object.values(localTarotCards);
+
+        if (USE_LOCAL_DATA) {
+            const randomIndex = Math.floor(Math.random() * cardsArray.length);
+            return cardsArray[randomIndex];
+        }
+
+        try {
+            const { data } = await apiClient.get('/tarot/random/pick');
+            return data;
+        } catch (error) {
+            console.warn('⚠️ API unavailable, picking random local tarot card:', error.message);
+            const randomIndex = Math.floor(Math.random() * cardsArray.length);
+            return cardsArray[randomIndex];
+        }
     }
 };
 

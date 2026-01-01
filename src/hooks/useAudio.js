@@ -161,14 +161,20 @@ export function useAudio(src, options = {}) {
         play()
     }, [play])
 
-    // Pause on tab visibility change
+    // Store playing state in a ref to avoid re-renders on visibility change
+    const isPlayingRef = useRef(isPlaying)
+    useEffect(() => {
+        isPlayingRef.current = isPlaying
+    }, [isPlaying])
+
+    // Pause on tab visibility change - using ref to avoid re-renders
     useEffect(() => {
         const handleVisibilityChange = () => {
             if (!audioRef.current) return
 
-            if (document.hidden && isPlaying) {
+            if (document.hidden && isPlayingRef.current) {
                 audioRef.current.pause()
-            } else if (!document.hidden && isPlaying) {
+            } else if (!document.hidden && isPlayingRef.current) {
                 audioRef.current.play().catch(() => { })
             }
         }
@@ -177,7 +183,7 @@ export function useAudio(src, options = {}) {
         return () => {
             document.removeEventListener('visibilitychange', handleVisibilityChange)
         }
-    }, [isPlaying])
+    }, []) // Empty deps - uses ref instead
 
     return {
         isPlaying,
