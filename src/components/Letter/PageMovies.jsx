@@ -64,7 +64,7 @@ export default function PageMovies({ page, envelope, fontPairing, accentColor })
                     className="letter-heading text-2xl md:text-3xl"
                     style={{ color: accentColor }}
                 >
-                    {page.title || 'Movies to Watch'}
+                    {page.title}
                 </h2>
             </motion.div>
 

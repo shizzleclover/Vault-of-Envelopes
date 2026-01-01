@@ -21,9 +21,11 @@ const PAGE_TYPES = [
     { type: 'intro', label: 'Intro Text', icon: '👋', description: 'Start with a warm welcome' },
     { type: 'recap', label: 'Story/Recap', icon: '📖', description: 'Tell your story' },
     { type: 'spotify', label: 'Music', icon: '🎵', description: 'Add a playlist' },
+    { type: 'youtube', label: 'YouTube Video', icon: '▶️', description: 'Embed a video' },
     { type: 'movies', label: 'Movies', icon: '🎬', description: 'Watchlist recommendations' },
     { type: 'memories', label: 'Photo Grid', icon: '📸', description: 'A collection of photos' },
     { type: 'tarot', label: 'Tarot Card', icon: '🔮', description: 'Auto-generated reading' },
+    { type: 'mantra', label: 'Mantra', icon: '✨', description: '2026 Mantra Card' },
 ];
 
 function AutoResizeTextarea({ value, onChange, placeholder, className }) {
@@ -69,7 +71,7 @@ function BlogBlock({ page, onUpdate, onDelete }) {
     };
 
     const isTextType = page.type === 'intro' || page.type === 'recap';
-    const isSpecial = page.type === 'tarot';
+    const isSpecial = page.type === 'tarot' || page.type === 'mantra';
 
     return (
         <div
@@ -105,7 +107,7 @@ function BlogBlock({ page, onUpdate, onDelete }) {
                 </div>
 
                 {/* Title Input */}
-                {page.type !== 'tarot' && (
+                {!isSpecial && (
                     <input
                         type="text"
                         value={page.title || ''}
@@ -151,6 +153,20 @@ function BlogBlock({ page, onUpdate, onDelete }) {
                     </div>
                 )}
 
+                {/* YouTube ID */}
+                {page.type === 'youtube' && (
+                    <div className="flex items-center gap-3 bg-red-50/50 rounded-lg p-3 border border-red-100">
+                        <span className="text-xl">▶️</span>
+                        <input
+                            type="text"
+                            value={page.videoId || ''}
+                            onChange={(e) => updateField('videoId', e.target.value)}
+                            placeholder="YouTube Video ID (e.g. wbjKk5tXQfE)..."
+                            className="w-full bg-transparent border-none text-sm text-slate-700 placeholder:text-red-700/30 focus:ring-0 font-mono"
+                        />
+                    </div>
+                )}
+
                 {/* Memories Placeholder */}
                 {page.type === 'memories' && (
                     <div className="border-2 border-dashed border-slate-200 rounded-lg p-4 text-center">
@@ -161,10 +177,18 @@ function BlogBlock({ page, onUpdate, onDelete }) {
                 )}
 
                 {/* Tarot Placeholder */}
-                {isSpecial && (
+                {page.type === 'tarot' && (
                     <div className="text-center py-4">
                         <span className="text-4xl mb-2 block animate-pulse">🔮</span>
-                        <p className="text-indigo-600 text-sm font-medium">Auto-generated Tarot Reading</p>
+                        <p className="text-indigo-600 text-sm font-medium">Tarot Card Display</p>
+                    </div>
+                )}
+
+                {/* Mantra Placeholder */}
+                {page.type === 'mantra' && (
+                    <div className="text-center py-4">
+                        <span className="text-4xl mb-2 block animate-pulse">✨</span>
+                        <p className="text-indigo-600 text-sm font-medium">Mantra Card Display</p>
                     </div>
                 )}
             </div>
@@ -185,6 +209,7 @@ export default function PageBuilder({ pages, onChange }) {
         if (type === 'movies') newPage.list = [];
         if (type === 'memories') newPage.images = [];
         if (type === 'spotify') newPage.playlistUrl = '';
+        if (type === 'youtube') newPage.videoId = '';
 
         onChange([...pages, newPage]);
         setShowMenu(false);

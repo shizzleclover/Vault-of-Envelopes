@@ -27,13 +27,7 @@ export default function EnvelopeStack() {
             } catch (err) {
                 console.error('Failed to fetch envelopes:', err)
                 setError('Failed to load envelopes')
-                // Fallback to static data if API fails
-                try {
-                    const staticData = await import('../data/envelopes.json')
-                    setEnvelopes(staticData.default)
-                } catch {
-                    setError('Failed to load envelopes')
-                }
+                setError('Failed to load envelopes')
             } finally {
                 setLoading(false)
             }
@@ -163,7 +157,7 @@ export default function EnvelopeStack() {
     }
 
     return (
-        <div className="w-full h-full relative" {...bind()}>
+        <div className="w-full h-full relative" {...bind()} style={{ touchAction: 'none' }}>
             {/* 3D Canvas */}
             <Canvas
                 camera={{ position: [0, 0, 5], fov: 50 }}

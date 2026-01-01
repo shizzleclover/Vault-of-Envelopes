@@ -4,11 +4,12 @@ const pageSchema = new mongoose.Schema({
     id: Number,
     type: {
         type: String,
-        enum: ['intro', 'recap', 'spotify', 'movies', 'memories', 'tarot']
+        enum: ['intro', 'recap', 'spotify', 'movies', 'memories', 'tarot', 'mantra', 'youtube']
     },
     title: String,
     content: String,
     playlistUrl: String,
+    videoId: String,
     list: [String],
     images: [String]
 }, { _id: false });

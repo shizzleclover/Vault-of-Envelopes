@@ -46,7 +46,7 @@ export default function PageMemories({ page, envelope, fontPairing, accentColor 
                     className="letter-heading text-2xl md:text-3xl"
                     style={{ color: accentColor }}
                 >
-                    {page.title || 'Highlights'}
+                    {page.title}
                 </h2>
             </motion.div>
 

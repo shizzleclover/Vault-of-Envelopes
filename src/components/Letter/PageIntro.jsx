@@ -11,7 +11,7 @@ export default function PageIntro({ page, envelope, fontPairing, accentColor }) 
                 className="letter-heading text-4xl md:text-5xl mb-8"
                 style={{ color: accentColor }}
             >
-                {page.title || `Dear ${envelope.recipient},`}
+                {page.title}{/* Removed hardcoded fallback */}
             </motion.h1>
 
             {/* Content */}

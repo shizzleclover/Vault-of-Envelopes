@@ -17,14 +17,8 @@ export default function LetterContainer({ envelope, onClose }) {
     const [currentPage, setCurrentPage] = useState(0)
     const [direction, setDirection] = useState(0)
 
-    const isBoma = envelope.id === 'boma-2025';
-    // If it's Boma, we might want to override pages or inject the YouTube page as the first one.
-    // User asked "embed this as the youtube player... once the letter opens".
-    // So we treat it as a special single-page or first-page experience.
-
-    const pages = isBoma
-        ? [{ type: 'youtube', id: 'special-boma' }, ...(envelope.letter?.pages || [])]
-        : (envelope.letter?.pages || [])
+    // Use pages directly from the envelope data
+    const pages = envelope.letter?.pages || []
 
     const paperStyle = getLetterPaperById(envelope.letter?.paperTexture)
     const fontPairing = getFontPairingById(envelope.letter?.fontPairing)

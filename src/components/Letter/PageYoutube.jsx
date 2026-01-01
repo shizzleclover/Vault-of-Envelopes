@@ -4,9 +4,8 @@ import { useState } from 'react'
 export default function PageYoutube({ page, envelope, fontPairing, accentColor }) {
     const [isLoaded, setIsLoaded] = useState(false)
 
-    // Teletubbies video ID (or a fun generic happy new year one if Teletubbies specific one isn't found).
-    // Using a Teletubbies theme song or intro as a safe bet for "Teletubby" reference.
-    const videoId = "wbjKk5tXQfE" // Teletubbies Intro (Official)
+    // Video ID from page data or fallback to defaults
+    const videoId = page.videoId || "wbjKk5tXQfE"
 
     return (
         <div className="w-full h-full flex flex-col items-center justify-center relative">
@@ -42,7 +41,7 @@ export default function PageYoutube({ page, envelope, fontPairing, accentColor }
                         color: accentColor
                     }}
                 >
-                    Happy new year Teletubby
+                    {page.title || `Happy New Year, ${envelope.recipient}`}
                 </h1>
                 <p className="text-warm-brown/60 text-lg font-serif italic">
                     (Press play if it doesn't start automatically)
