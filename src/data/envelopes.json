@@ -89,7 +89,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Oscroh.mp3",
+        "backgroundMusic": "/music/Oscroh.mp3",
         "tarotCard": {
             "id": "the-lovers",
             "name": "The Lovers",
@@ -458,7 +458,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Timi-embedding.mp3",
+        "backgroundMusic": "/music/Timi-embedding.mp3",
         "tarotCard": {
             "id": "wheel-of-fortune",
             "name": "Wheel of Fortune",
@@ -561,7 +561,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/emma.mp3",
+        "backgroundMusic": "/music/emma.mp3",
         "tarotCard": {
             "id": "the-fool",
             "name": "The Fool",
@@ -1176,7 +1176,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Oluwole.mp3",
+        "backgroundMusic": "/music/Oluwole.mp3",
         "tarotCard": {
             "id": "the-hermit",
             "name": "The Hermit",
