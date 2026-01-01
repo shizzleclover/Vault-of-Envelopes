@@ -111,6 +111,60 @@ export const fontPairings = {
         bodyWeight: 400,
         vibe: 'Contemporary and sleek'
     },
+
+    'montserrat': {
+        id: 'montserrat',
+        heading: "'Montserrat', sans-serif",
+        body: "'Montserrat', sans-serif",
+        headingWeight: 700,
+        bodyWeight: 400,
+        vibe: 'Geometric and modern'
+    },
+
+    'urbanist': {
+        id: 'urbanist',
+        heading: "'Urbanist', sans-serif",
+        body: "'Urbanist', sans-serif",
+        headingWeight: 700,
+        bodyWeight: 400,
+        vibe: 'Futuristic and clean'
+    },
+
+    'jakarta': {
+        id: 'jakarta',
+        heading: "'Plus Jakarta Sans', sans-serif",
+        body: "'Plus Jakarta Sans', sans-serif",
+        headingWeight: 700,
+        bodyWeight: 400,
+        vibe: 'Tech-forward and geometric'
+    },
+
+    'satoshi': {
+        id: 'satoshi',
+        heading: "'Satoshi', sans-serif",
+        body: "'Satoshi', sans-serif",
+        headingWeight: 700,
+        bodyWeight: 400,
+        vibe: 'Modern grotesque'
+    },
+
+    'modern-mix': {
+        id: 'modern-mix',
+        heading: "'Satoshi', sans-serif",
+        body: "'Urbanist', sans-serif",
+        headingWeight: 700,
+        bodyWeight: 400,
+        vibe: 'Trendy and high-end'
+    },
+
+    'luxury-sans': {
+        id: 'luxury-sans',
+        heading: "'Montserrat', sans-serif",
+        body: "'Plus Jakarta Sans', sans-serif",
+        headingWeight: 600,
+        bodyWeight: 400,
+        vibe: 'Luxurious sans-serif'
+    },
 }
 
 /**

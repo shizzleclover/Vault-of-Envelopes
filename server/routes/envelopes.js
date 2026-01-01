@@ -62,7 +62,17 @@ router.put('/:id', protect, async (req, res) => {
 // @access  Private
 router.post('/', protect, async (req, res) => {
     try {
-        const envelope = await Envelope.create(req.body);
+        let envelopeData = { ...req.body };
+
+        // Auto-generate ID if not provided
+        if (!envelopeData.id) {
+            const baseId = envelopeData.recipient
+                ? envelopeData.recipient.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-')
+                : 'envelope';
+            envelopeData.id = `${baseId}-${new Date().getFullYear()}-${Math.floor(Math.random() * 1000)}`;
+        }
+
+        const envelope = await Envelope.create(envelopeData);
         res.status(201).json(envelope);
     } catch (error) {
         console.error('Create envelope error:', error);

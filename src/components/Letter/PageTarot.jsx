@@ -8,9 +8,16 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
     const [imageError, setImageError] = useState(false)
 
     // Get assigned tarot card on mount
+    // Get assigned tarot card on mount
     useEffect(() => {
-        const card = getTarotCardForEnvelope(envelope.id)
-        setTarotCard(card)
+        // If envelope has a specific manual tarot card assigned, use it
+        if (envelope.tarotCard && envelope.tarotCard.name) {
+            setTarotCard(envelope.tarotCard)
+        } else {
+            // Fallback to random assignment if no manual card is set (preserving old behavior just in case)
+            const card = getTarotCardForEnvelope(envelope.id)
+            setTarotCard(card)
+        }
 
         // Auto-reveal after a moment
         const timer = setTimeout(() => {
@@ -18,7 +25,7 @@ export default function PageTarot({ page, envelope, fontPairing, accentColor }) 
         }, 1500)
 
         return () => clearTimeout(timer)
-    }, [envelope.id])
+    }, [envelope.id, envelope.tarotCard])
 
     if (!tarotCard) {
         return (

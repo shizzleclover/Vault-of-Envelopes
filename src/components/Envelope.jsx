@@ -1,8 +1,68 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { Text, RoundedBox } from '@react-three/drei'
+import { Text, RoundedBox, useTexture } from '@react-three/drei'
 import { useSpring, animated } from '@react-spring/three'
 import * as THREE from 'three'
+
+// Safe Stamp component that doesn't crash on 404s
+function Stamp({ image, color, opacity }) {
+    const [texture, setTexture] = useState(null)
+
+    // Load texture safely without Suspense to prevent crashes on missing files
+    useEffect(() => {
+        if (!image) {
+            setTexture(null)
+            return
+        }
+
+        const loader = new THREE.TextureLoader()
+        loader.load(
+            image,
+            (loadedTexture) => {
+                loadedTexture.colorSpace = THREE.SRGBColorSpace // Updated for newer Three.js
+                setTexture(loadedTexture)
+            },
+            undefined, // onProgress
+            (err) => {
+                console.warn(`Failed to load stamp image: ${image}`, err)
+                setTexture(null) // Fallback to color
+            }
+        )
+    }, [image])
+
+    return (
+        <group position={[0.85, 0.45, 0.05]}>
+            {/* Stamp border/background */}
+            <mesh position={[0, 0, -0.005]}>
+                <planeGeometry args={[0.42, 0.42]} />
+                <meshBasicMaterial
+                    color="#FFFFFF"
+                    transparent
+                    opacity={opacity * 0.9}
+                />
+            </mesh>
+
+            {/* Stamp Image or Fallback Color */}
+            <mesh>
+                <planeGeometry args={[0.38, 0.38]} />
+                {texture ? (
+                    <meshBasicMaterial
+                        map={texture}
+                        transparent
+                        opacity={opacity}
+                    />
+                ) : (
+                    <meshStandardMaterial
+                        color={color}
+                        roughness={0.5}
+                        transparent
+                        opacity={opacity}
+                    />
+                )}
+            </mesh>
+        </group>
+    )
+}
 
 const AnimatedGroup = animated.group
 
@@ -92,28 +152,12 @@ export default function Envelope({ envelope, offset, isActive, onClick }) {
                 {envelope.initials}
             </Text>
 
-            {/* Stamp - Colored square placeholder */}
-            <group position={[0.85, 0.45, 0.05]}>
-                {/* Stamp border/background */}
-                <mesh position={[0, 0, -0.005]}>
-                    <planeGeometry args={[0.4, 0.4]} />
-                    <meshBasicMaterial
-                        color="#FFFFFF"
-                        transparent
-                        opacity={opacity * 0.9}
-                    />
-                </mesh>
-
-                {/* Stamp color */}
-                <RoundedBox args={[0.32, 0.32, 0.01]} radius={0.02}>
-                    <meshStandardMaterial
-                        color={stampColor}
-                        roughness={0.5}
-                        transparent
-                        opacity={opacity}
-                    />
-                </RoundedBox>
-            </group>
+            {/* Stamp */}
+            <Stamp
+                image={envelope.envelope?.stamp?.image}
+                color={stampColor}
+                opacity={opacity}
+            />
 
             {/* Subtle glow effect for active envelope */}
             {isActive && (

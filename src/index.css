@@ -2,13 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base Styles */
+/* Base Styles - Using Custom Color Palette */
 :root {
+    /* Original colors */
     --color-cream: #FFF9F0;
     --color-warm-brown: #8B7355;
     --color-soft-gold: #D4AF37;
     --color-mystical-purple: #9B7EBD;
     --color-deep-midnight: #1A1A2E;
+
+    /* New Color Palette */
+    --tea-green-500: #26ff00;
+    --tea-green-700: #179900;
+    --tea-green-900: #083300;
+    --lime-cream-500: #c8ff00;
+    --lime-cream-700: #789900;
+    --rosy-taupe-500: #9c6663;
+    --rosy-taupe-800: #3e2928;
+    --rosy-taupe-950: #160e0e;
+    --vintage-lavender-500: #926798;
+    --vintage-lavender-800: #3a293d;
+    --vintage-lavender-950: #140e15;
+    --blackberry-cream-500: #9f6093;
+    --blackberry-cream-800: #40263b;
+    --blackberry-cream-950: #160d15;
 }
 
 * {
@@ -22,31 +39,22 @@ body,
 #root {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+    background: #87CEEB;
     color: var(--color-cream);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Mystical Background Pattern */
+/* No gradient pattern - clean solid background */
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-        radial-gradient(circle at 20% 80%, rgba(155, 126, 189, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 50% 50%, rgba(255, 249, 240, 0.02) 0%, transparent 50%);
-    pointer-events: none;
-    z-index: 0;
+    display: none;
 }
 
 /* Scrollbar Styling */

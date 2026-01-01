@@ -3,21 +3,33 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useDrag } from '@use-gesture/react'
 import { getLetterPaperById } from '../../utils/letterPapers'
 import { getFontPairingById } from '../../utils/fontPairings'
+import PageYoutube from './PageYoutube'
 import PageIntro from './PageIntro'
 import PageRecap from './PageRecap'
 import PageSpotify from './PageSpotify'
 import PageMovies from './PageMovies'
 import PageMemories from './PageMemories'
 import PageTarot from './PageTarot'
+import PageMantra from './PageMantra'
+
 
 export default function LetterContainer({ envelope, onClose }) {
     const [currentPage, setCurrentPage] = useState(0)
     const [direction, setDirection] = useState(0)
 
-    const pages = envelope.letter?.pages || []
+    const isBoma = envelope.id === 'boma-2025';
+    // If it's Boma, we might want to override pages or inject the YouTube page as the first one.
+    // User asked "embed this as the youtube player... once the letter opens".
+    // So we treat it as a special single-page or first-page experience.
+
+    const pages = isBoma
+        ? [{ type: 'youtube', id: 'special-boma' }, ...(envelope.letter?.pages || [])]
+        : (envelope.letter?.pages || [])
+
     const paperStyle = getLetterPaperById(envelope.letter?.paperTexture)
     const fontPairing = getFontPairingById(envelope.letter?.fontPairing)
     const accentColor = envelope.letter?.accentColor || '#D4AF37'
+    const envelopeColor = envelope.envelope?.color || paperStyle.background;
 
     // Navigate to next/previous page
     const goToPage = useCallback((newPage) => {
@@ -50,6 +62,8 @@ export default function LetterContainer({ envelope, onClose }) {
         }
 
         switch (page.type) {
+            case 'youtube':
+                return <PageYoutube {...pageProps} />
             case 'intro':
                 return <PageIntro {...pageProps} />
             case 'recap':
@@ -62,33 +76,45 @@ export default function LetterContainer({ envelope, onClose }) {
                 return <PageMemories {...pageProps} />
             case 'tarot':
                 return <PageTarot {...pageProps} />
+            case 'mantra':
+                return <PageMantra {...pageProps} />
             default:
                 return <div className="text-cream">Unknown page type</div>
         }
     }
 
-    // Page transition variants
+    // Smoother Transitions
     const pageVariants = {
         enter: (direction) => ({
             y: direction > 0 ? '100%' : '-100%',
             opacity: 0,
+            scale: 0.95,
         }),
         center: {
             y: 0,
             opacity: 1,
+            scale: 1,
         },
         exit: (direction) => ({
             y: direction < 0 ? '100%' : '-100%',
             opacity: 0,
+            scale: 0.95,
         }),
+    }
+
+    const transition = {
+        y: { type: 'spring', stiffness: 200, damping: 25 },
+        opacity: { duration: 0.3 },
+        scale: { duration: 0.3 }
     }
 
     return (
         <div
-            className="fixed inset-0 z-40 overflow-hidden"
+            className="fixed inset-0 z-40 overflow-y-auto overflow-x-hidden touch-pan-y"
             style={{
-                background: paperStyle.background,
+                background: envelopeColor, // Dynamic background based on envelope color
                 backgroundImage: paperStyle.texture !== 'none' ? paperStyle.texture : undefined,
+                touchAction: 'pan-y'
             }}
             {...bind()}
         >
@@ -112,7 +138,7 @@ export default function LetterContainer({ envelope, onClose }) {
             {/* Close button */}
             <button
                 onClick={onClose}
-                className="fixed top-6 left-6 z-50 w-10 h-10 flex items-center justify-center rounded-full bg-cream/10 hover:bg-cream/20 border border-warm-brown/20 transition-all group"
+                className="fixed top-6 left-6 z-50 w-10 h-10 flex items-center justify-center rounded-full bg-black/5 hover:bg-black/10 border border-black/5 transition-all group backdrop-blur-sm"
             >
                 <svg
                     width="18"
@@ -121,14 +147,14 @@ export default function LetterContainer({ envelope, onClose }) {
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
-                    className="text-warm-brown/60 group-hover:text-warm-brown transition-colors"
+                    className="text-black/60 group-hover:text-black transition-colors"
                 >
                     <path d="M19 12H5M12 19l-7-7 7-7" />
                 </svg>
             </button>
 
             {/* Page content */}
-            <div className="letter-container w-full h-full relative">
+            <div className="letter-container w-full min-h-full flex items-center justify-center relative py-20 px-4">
                 <AnimatePresence mode="wait" custom={direction}>
                     <motion.div
                         key={currentPage}
@@ -137,11 +163,8 @@ export default function LetterContainer({ envelope, onClose }) {
                         initial="enter"
                         animate="center"
                         exit="exit"
-                        transition={{
-                            y: { type: 'spring', stiffness: 300, damping: 30 },
-                            opacity: { duration: 0.2 }
-                        }}
-                        className="absolute inset-0 flex items-center justify-center p-8"
+                        transition={transition}
+                        className="w-full max-w-4xl min-h-[60vh] flex flex-col items-center justify-center"
                     >
                         {pages[currentPage] && renderPage(pages[currentPage])}
                     </motion.div>
@@ -149,46 +172,26 @@ export default function LetterContainer({ envelope, onClose }) {
             </div>
 
             {/* Progress dots */}
-            <div className="fixed bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-50">
+            <div className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-50 bg-black/5 px-2 py-4 rounded-full backdrop-blur-md">
                 {pages.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => goToPage(index)}
                         className={`transition-all duration-300 ${index === currentPage
-                                ? 'w-6 h-2 rounded-full'
-                                : 'w-2 h-2 rounded-full hover:scale-125'
+                            ? 'w-2 h-8 rounded-full'
+                            : 'w-2 h-2 rounded-full hover:scale-125' // Vertical active indicator
                             }`}
                         style={{
                             backgroundColor: index === currentPage
                                 ? accentColor
-                                : `${accentColor}40`,
+                                : 'rgba(0,0,0,0.2)',
                         }}
                     />
                 ))}
             </div>
 
-            {/* Navigation hints */}
-            {currentPage < pages.length - 1 && (
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1 }}
-                    className="fixed bottom-20 left-1/2 -translate-x-1/2 text-center"
-                >
-                    <motion.div
-                        animate={{ y: [0, 5, 0] }}
-                        transition={{ repeat: Infinity, duration: 1.5 }}
-                        className="text-warm-brown/40"
-                    >
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <path d="M12 5v14M19 12l-7 7-7-7" />
-                        </svg>
-                    </motion.div>
-                </motion.div>
-            )}
-
             {/* Page counter */}
-            <div className="fixed top-6 right-6 z-50 font-inter text-warm-brown/40 text-sm">
+            <div className="fixed top-6 right-6 z-50 font-inter text-black/40 text-sm font-medium bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">
                 {currentPage + 1} / {pages.length}
             </div>
         </div>

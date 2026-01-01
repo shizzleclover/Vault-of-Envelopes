@@ -58,7 +58,13 @@ const envelopeSchema = new mongoose.Schema({
         default: 'placeholder'
     },
     backgroundMusic: String,
-    tarotCard: tarotCardSchema
+    tarotCard: tarotCardSchema,
+    mantraCard: {
+        id: String,
+        name: String,
+        image: String,
+        mantra: String
+    }
 }, {
     timestamps: true
 });

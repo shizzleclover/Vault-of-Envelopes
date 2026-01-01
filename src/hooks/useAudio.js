@@ -125,7 +125,14 @@ export function useAudio(src, options = {}) {
 
         try {
             setIsBlocked(false)
-            await audioRef.current.play()
+            const playPromise = audioRef.current.play()
+            if (playPromise !== undefined) {
+                await playPromise.catch(error => {
+                    // Ignore interruption errors
+                    if (error.name === 'AbortError' || error.name === 'NotSupportedError') return
+                    throw error
+                })
+            }
             setIsPlaying(true)
             fadeIn()
         } catch (error) {
