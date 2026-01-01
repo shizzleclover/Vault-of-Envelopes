@@ -1,0 +1,107 @@
+{
+    "the-fool": {
+        "id": "the-fool",
+        "name": "The Fool",
+        "numeral": "0",
+        "image": "/tarot/the-fool.jpg",
+        "meaning": "New beginnings, adventure, and spontaneity await you this year. Embrace the unknown with open arms."
+    },
+    "the-magician": {
+        "id": "the-magician",
+        "name": "The Magician",
+        "numeral": "I",
+        "image": "/tarot/the-magician.jpg",
+        "meaning": "Creativity and manifestation are your superpowers in 2025. You have all the tools you need."
+    },
+    "the-high-priestess": {
+        "id": "the-high-priestess",
+        "name": "The High Priestess",
+        "numeral": "II",
+        "image": "/tarot/the-high-priestess.jpg",
+        "meaning": "Trust your intuition this year. The answers you seek are already within you."
+    },
+    "the-empress": {
+        "id": "the-empress",
+        "name": "The Empress",
+        "numeral": "III",
+        "image": "/tarot/the-empress.jpg",
+        "meaning": "Abundance and nurturing energy surrounds you. Create, grow, and flourish."
+    },
+    "the-emperor": {
+        "id": "the-emperor",
+        "name": "The Emperor",
+        "numeral": "IV",
+        "image": "/tarot/the-emperor.jpg",
+        "meaning": "Structure and leadership define your path. Take charge of your destiny with confidence."
+    },
+    "the-hierophant": {
+        "id": "the-hierophant",
+        "name": "The Hierophant",
+        "numeral": "V",
+        "image": "/tarot/the-hierophant.jpg",
+        "meaning": "Wisdom and tradition guide you. Seek knowledge and share it generously."
+    },
+    "the-lovers": {
+        "id": "the-lovers",
+        "name": "The Lovers",
+        "numeral": "VI",
+        "image": "/tarot/the-lovers.jpg",
+        "meaning": "Deep connections and meaningful choices await. Follow your heart in all things."
+    },
+    "the-chariot": {
+        "id": "the-chariot",
+        "name": "The Chariot",
+        "numeral": "VII",
+        "image": "/tarot/the-chariot.jpg",
+        "meaning": "Victory through determination. Your willpower will carry you to triumph."
+    },
+    "strength": {
+        "id": "strength",
+        "name": "Strength",
+        "numeral": "VIII",
+        "image": "/tarot/strength.jpg",
+        "meaning": "Inner courage and gentle power are yours. Face challenges with grace and resilience."
+    },
+    "the-hermit": {
+        "id": "the-hermit",
+        "name": "The Hermit",
+        "numeral": "IX",
+        "image": "/tarot/the-hermit.jpg",
+        "meaning": "Solitude brings clarity. Take time for reflection and self-discovery this year."
+    },
+    "wheel-of-fortune": {
+        "id": "wheel-of-fortune",
+        "name": "Wheel of Fortune",
+        "numeral": "X",
+        "image": "/tarot/wheel-of-fortune.jpg",
+        "meaning": "Cycles of change bring opportunity. Embrace life's rhythms and trust the journey."
+    },
+    "justice": {
+        "id": "justice",
+        "name": "Justice",
+        "numeral": "XI",
+        "image": "/tarot/justice.jpg",
+        "meaning": "Truth and fairness prevail. Your integrity will be rewarded."
+    },
+    "the-star": {
+        "id": "the-star",
+        "name": "The Star",
+        "numeral": "XVII",
+        "image": "/tarot/the-star.jpg",
+        "meaning": "Hope and inspiration illuminate your path. Dream big—the universe supports you."
+    },
+    "the-moon": {
+        "id": "the-moon",
+        "name": "The Moon",
+        "numeral": "XVIII",
+        "image": "/tarot/the-moon.jpg",
+        "meaning": "Mystery and intuition guide you through uncertainty. Trust the process."
+    },
+    "the-sun": {
+        "id": "the-sun",
+        "name": "The Sun",
+        "numeral": "XIX",
+        "image": "/tarot/the-sun.jpg",
+        "meaning": "Joy, success, and vitality shine upon you. Celebrate life fully."
+    }
+}
