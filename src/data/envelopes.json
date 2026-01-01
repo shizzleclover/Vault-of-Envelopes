@@ -489,45 +489,86 @@
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Ekundis,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Hey Emmanuel,",
+                    "content": "I have been thinking a lot about this past year and I realized I could not really sum it up without thinking about you. A huge part of my year was spent in your room, just chilling, laughing, messing around, working, and sending memes. Honestly, I can not even remember how many hours we spent there, but every single one was worth it. You have been such a big part of my 2025, and I wanted to make sure you know that."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "Same Freakuency",
+                    "content": "Being around you just feels effortless. We have the same freakuency, and it makes everything click naturally. You are just seamless. Whether we were pulling pranks, joking about the silliest things, working on projects, or just sending memes to each other and cracking up, it all felt real and fun. I have never had a friendship where I can laugh so hard, be so random, and still have it feel like we are just vibing perfectly. lowkirkueinly, you get it. You get me."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "Building Together",
+                    "content": "I have also really appreciated working with you this year. The projects, the hackathons, the brainstorming sessions, and just throwing ideas around with you and Olu for Owltech were some of my favorite moments of the year. It felt like building with someone who actually cares about the work and the people involved, and that is rare. You bring your energy, your sharpness, and your creativity in a way that just makes things feel possible."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Into the Wild",
-                        "127 Hours",
-                        "Wild"
-                    ]
+                    "type": "recap",
+                    "title": "How Close We Became",
+                    "content": "Beyond all that, I have loved how close we became. Spending all that time together, just hanging out, working, joking, pranking, and talking about life made this year special. You have been a friend I can count on, a friend I can joke with about literally anything, and someone whose company I genuinely enjoy. The way we send memes, the random inside jokes, and the way we can just read each other without even saying much, it all adds up to something really rare."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "I Am Proud of You",
+                    "content": "I am proud of you, Emmanuel. Seeing how you have grown this year, watching you handle things, push yourself, and stay intentional with your goals, makes me respect you even more. I am genuinely happy that we became closer this year, and I hope you know I value that deeply. You have made my year better just by being in it."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "Looking Forward",
+                    "content": "As we step into 2026, I hope it brings you even more growth, happiness, and opportunities. I pray it gives you clarity when things feel messy, strength when life challenges you, and joy in all the moments that make it worth it. I hope this year rewards your effort, your energy, your humor, and your seamlessness. I hope we continue to pull pranks, share memes, build ideas, and keep that Charlie Kirk energy alive."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "Thank You",
+                    "content": "Thank you for being one of the best parts of my year. Thank you for the laughs, the conversations, the work, the pranks, the memes, and the moments we just vibed without a single care. I respect you, I am proud of you, and I am genuinely grateful that we got closer this year.\n\nHere is to more memes, more jokes, more pranks, more projects, more growth, more freakuency, more Charlie Kirk moments, and more memories together in 2026.\n\nYour friend,\nMurewa"
+                },
+                {
+                    "id": 8,
+                    "type": "spotify",
+                    "title": "Your 2026 Vibes",
+                    "playlistUrl": "https://open.spotify.com/embed/playlist/68VjKkDCWoGYkikGbW83vr?utm_source=generator"
+                },
+                {
+                    "id": 11,
+                    "type": "gif",
+                    "title": "Charlie Kirk Energy",
+                    "gifUrl": "https://media.giphy.com/media/QxdS6PqP31fhXHqjoG/giphy.gif",
+                    "caption": "This is literally us every time we hang out "
+                },
+                {
+                    "id": 9,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Emmanuel/IMG_1140.JPG",
+                        "/memories/Emmanuel/IMG_1939.JPG",
+                        "/memories/Emmanuel/IMG_2198.PNG",
+                        "/memories/Emmanuel/0193C10C-8028-41AF-80C7-4B3EE396873E.mp4",
+                        "/memories/Emmanuel/8FEEA3F8-B5B4-473D-B8A9-554463D9B94F.mp4",
+                        "/memories/Emmanuel/AC630DC8-E0B6-4BCD-9AB8-61A04619B178.mov"
+                    ]
+                },
+                {
+                    "id": 10,
                     "type": "tarot"
                 }
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
+        "backgroundMusic": "/Music/emma.mp3",
+        "tarotCard": {
+            "id": "the-fool",
+            "name": "The Fool",
+            "numeral": "0",
+            "image": "/tarot/IMG_2438.JPG",
+            "meaning": "New beginnings and unlimited potential await you. The Fool represents the start of an adventure with boundless optimism. Step forward fearlessly into 2026 - every great journey begins with that first step into the unknown."
+        }
     },
     {
         "id": "investment-banking-2025",

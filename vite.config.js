@@ -6,6 +6,13 @@ export default defineConfig({
     plugins: [react()],
     server: {
         port: 5173,
-        open: true
+        open: true,
+        hmr: {
+            overlay: false
+        },
+        watch: {
+            // Don't watch data files to prevent reloads during manual edits
+            ignored: ['**/src/data/**']
+        }
     }
 })

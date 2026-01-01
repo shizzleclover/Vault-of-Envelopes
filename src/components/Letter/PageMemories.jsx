@@ -1,9 +1,15 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Helper to check if file is video
+const isVideo = (src) => {
+    const ext = src.split('.').pop().toLowerCase()
+    return ['mp4', 'mov', 'webm', 'avi'].includes(ext)
+}
+
 export default function PageMemories({ page, envelope, fontPairing, accentColor }) {
     const images = page.images || []
-    const [selectedImage, setSelectedImage] = useState(null)
+    const [selectedMedia, setSelectedMedia] = useState(null)
 
     // Container animation
     const container = {
@@ -17,8 +23,8 @@ export default function PageMemories({ page, envelope, fontPairing, accentColor 
         },
     }
 
-    // Image animation
-    const imageVariant = {
+    // Media animation
+    const mediaVariant = {
         hidden: {
             opacity: 0,
             scale: 0.8,
@@ -50,7 +56,7 @@ export default function PageMemories({ page, envelope, fontPairing, accentColor 
                 </h2>
             </motion.div>
 
-            {/* Image grid */}
+            {/* Media grid */}
             {images.length > 0 ? (
                 <motion.div
                     variants={container}
@@ -58,36 +64,56 @@ export default function PageMemories({ page, envelope, fontPairing, accentColor 
                     animate="visible"
                     className="grid grid-cols-2 md:grid-cols-3 gap-3"
                 >
-                    {images.map((image, index) => (
+                    {images.map((media, index) => (
                         <motion.button
                             key={index}
-                            variants={imageVariant}
+                            variants={mediaVariant}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => setSelectedImage(image)}
-                            className="aspect-square rounded-lg overflow-hidden shadow-md"
+                            onClick={() => setSelectedMedia(media)}
+                            className="aspect-square rounded-lg overflow-hidden shadow-md relative"
                             style={{
                                 border: `2px solid ${accentColor}30`,
                             }}
                         >
-                            <img
-                                src={image}
-                                alt={`Memory ${index + 1}`}
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                    e.target.style.display = 'none'
-                                    e.target.parentElement.innerHTML = `
-                    <div class="w-full h-full flex items-center justify-center bg-warm-brown/10">
-                      <span class="text-2xl">📷</span>
-                    </div>
-                  `
-                                }}
-                            />
+                            {isVideo(media) ? (
+                                <>
+                                    <video
+                                        src={media}
+                                        className="w-full h-full object-cover"
+                                        muted
+                                        playsInline
+                                        preload="metadata"
+                                    />
+                                    {/* Play button overlay */}
+                                    <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                                        <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-black ml-1">
+                                                <polygon points="5 3 19 12 5 21 5 3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </>
+                            ) : (
+                                <img
+                                    src={media}
+                                    alt={`Memory ${index + 1}`}
+                                    className="w-full h-full object-cover"
+                                    onError={(e) => {
+                                        e.target.style.display = 'none'
+                                        e.target.parentElement.innerHTML = `
+                                            <div class="w-full h-full flex items-center justify-center bg-warm-brown/10">
+                                                <span class="text-2xl">📷</span>
+                                            </div>
+                                        `
+                                    }}
+                                />
+                            )}
                         </motion.button>
                     ))}
                 </motion.div>
             ) : (
-                // Placeholder when no images
+                // Placeholder when no media
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -107,23 +133,38 @@ export default function PageMemories({ page, envelope, fontPairing, accentColor 
 
             {/* Lightbox */}
             <AnimatePresence>
-                {selectedImage && (
+                {selectedMedia && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        onClick={() => setSelectedImage(null)}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-deep-midnight/90 backdrop-blur-md p-8"
+                        onClick={() => setSelectedMedia(null)}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-deep-midnight/90 backdrop-blur-md p-4"
                     >
-                        <motion.img
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.8, opacity: 0 }}
-                            src={selectedImage}
-                            alt="Memory"
-                            className="max-w-full max-h-full rounded-xl shadow-2xl"
-                            style={{ border: `3px solid ${accentColor}40` }}
-                        />
+                        {isVideo(selectedMedia) ? (
+                            <motion.video
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.8, opacity: 0 }}
+                                src={selectedMedia}
+                                controls
+                                autoPlay
+                                playsInline
+                                className="max-w-full max-h-[80vh] rounded-xl shadow-2xl"
+                                style={{ border: `3px solid ${accentColor}40` }}
+                                onClick={(e) => e.stopPropagation()}
+                            />
+                        ) : (
+                            <motion.img
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.8, opacity: 0 }}
+                                src={selectedMedia}
+                                alt="Memory"
+                                className="max-w-full max-h-full rounded-xl shadow-2xl"
+                                style={{ border: `3px solid ${accentColor}40` }}
+                            />
+                        )}
 
                         {/* Close hint */}
                         <motion.p
