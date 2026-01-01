@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useDrag } from '@use-gesture/react'
 import { getLetterPaperById } from '../../utils/letterPapers'
@@ -56,6 +56,33 @@ export default function LetterContainer({ envelope, onClose }) {
         filterTaps: true,
         threshold: 10,
     })
+
+    // Handle mouse wheel scroll for page navigation
+    useEffect(() => {
+        let lastScrollTime = 0
+        const scrollCooldown = 500 // ms between scroll actions
+
+        const handleWheel = (e) => {
+            const now = Date.now()
+            if (now - lastScrollTime < scrollCooldown) return
+
+            // Prevent default scroll behavior
+            e.preventDefault()
+
+            if (e.deltaY > 0 && currentPage < pages.length - 1) {
+                // Scroll down = next page
+                goToPage(currentPage + 1)
+                lastScrollTime = now
+            } else if (e.deltaY < 0 && currentPage > 0) {
+                // Scroll up = previous page
+                goToPage(currentPage - 1)
+                lastScrollTime = now
+            }
+        }
+
+        window.addEventListener('wheel', handleWheel, { passive: false })
+        return () => window.removeEventListener('wheel', handleWheel)
+    }, [currentPage, pages.length, goToPage])
 
     // Render page based on type
     const renderPage = (page) => {

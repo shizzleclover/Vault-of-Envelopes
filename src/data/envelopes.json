@@ -982,51 +982,102 @@
         },
         "letter": {
             "paperTexture": "smooth-white",
-            "fontPairing": "clean",
+            "fontPairing": "medieval",
             "accentColor": "#37474F",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Olu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Hey Oluwole,",
+                    "content": "I have been thinking about this past year a lot, and honestly, I could not think about it without thinking about you. So I just wanted to sit down and actually write this to you, because you have been a huge part of my year in ways I do not think I have said out loud enough."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "Through It All",
+                    "content": "This year was not perfect. It had wins, losses, frustrations, funny moments, tired days, and confusing phases. But through all of that, you were there, not just as someone I talk to once in a while, but as someone who was present. We worked on projects together, shared ideas, encouraged each other, argued sometimes, came back again, and still chose to keep showing up for the friendship. That means a lot to me."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "Building Together",
+                    "content": "Working with you never felt like just work. It felt like building with someone who honestly cares, someone who is invested in both the project and the person they are working with. There were days when things were stressful, or when plans were not making sense, and your presence alone made it easier to keep going. You bring this energy that makes things feel possible, even when they are tough."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Godfather",
-                        "Goodfellas",
-                        "Scarface"
-                    ]
+                    "type": "recap",
+                    "title": "Beyond Work",
+                    "content": "I also really value how our friendship exists outside of work. The times we went out, talked, laughed about the most random things, reflected on life, or just chilled, those moments mattered to me. They grounded me. They reminded me that life is more than pressure and goals. It is also about the people you go through it with."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "Being There",
+                    "content": "And this year especially, I am grateful for the way we were there for each other when things got heavy. You went through your breakup, and even though I could not fix anything, I wanted to be there in whatever way I could. To listen, to talk, or just sit in silence if that was what you needed. Then when I went through that rejection, you did not just brush it off or give surface words. You understood. You encouraged me. You stayed present too. That kind of mutual support is rare, and I do not take it for granted."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "Shared Victories",
+                    "content": "Helping you get that job and then watching you actually step into it and do your thing was one of those moments that made me genuinely happy. Not just because it worked out, but because I know how much effort, growth, and intention you have been putting into your life. Seeing you win felt personal, like a shared victory."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "What You Mean To Me",
+                    "content": "You are one of those friends that makes life feel less lonely. Someone I can talk to about real things. Someone I can be honest with without pretending. Someone who understands that friendship is not perfect, but still chooses to show up consistently. And that is something I deeply respect and appreciate about you."
+                },
+                {
+                    "id": 8,
+                    "type": "recap",
+                    "title": "Looking Forward",
+                    "content": "As we head into a new year, I am honestly rooting for you in every sense. I pray 2026 treats you kindly. I hope it gives you peace where you have carried weight, strength where you have been stretched, and joy in both the big and small moments. I hope your work opens the right doors, your growth becomes clearer even when the process feels slow, and you continue becoming the person you are meant to be."
+                },
+                {
+                    "id": 9,
+                    "type": "recap",
+                    "title": "You Deserve Good Things",
+                    "content": "You deserve good things, not just because you work hard, but because of the kind of person you are. Loyal, sincere, thoughtful, intentional, and real. I am grateful that I get to call you my friend, and I do not take that lightly at all."
+                },
+                {
+                    "id": 10,
+                    "type": "recap",
+                    "title": "Thank You",
+                    "content": "Thank you for this year. For the conversations, the support, the jokes, the healing moments, the projects, the encouragement, and just your presence. You have been a solid part of my journey, and I appreciate you more than I probably say.\n\nMore life, more growth, more wins, more peace, and more memories ahead.\n\nOorz,\nMurewa"
+                },
+                {
+                    "id": 11,
+                    "type": "spotify",
+                    "title": "Your 2026 Vibes",
+                    "playlistUrl": "https://open.spotify.com/embed/playlist/1l2EtROWIKfEGdnOaWq5TF?utm_source=generator"
+                },
+                {
+                    "id": 12,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Oluwole/50869caf-c79e-4056-aead-dfb7c7e4f350.jpg",
+                        "/memories/Oluwole/5c93f48d-fd79-4197-b79b-2533bad07b20.jpg",
+                        "/memories/Oluwole/IMG_0655.JPG",
+                        "/memories/Oluwole/IMG_0749.JPG",
+                        "/memories/Oluwole/IMG_0750.JPG"
+                    ]
+                },
+                {
+                    "id": 13,
                     "type": "tarot"
                 }
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/music/demo.mp3",
-        "tarotCard": null
+        "backgroundMusic": "/Music/Oluwole.mp3",
+        "tarotCard": {
+            "id": "the-hermit",
+            "name": "The Hermit",
+            "numeral": "IX",
+            "image": "/tarot/IMG_2440.JPG",
+            "meaning": "Solitude brings clarity. This year, take time for reflection and self-discovery. The answers you seek are within you. Your introspection and thoughtful nature will guide you to deeper wisdom and understanding."
+        }
     },
     {
         "id": "priscilla-2025",

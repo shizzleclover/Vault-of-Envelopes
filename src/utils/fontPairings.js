@@ -165,6 +165,24 @@ export const fontPairings = {
         bodyWeight: 400,
         vibe: 'Luxurious sans-serif'
     },
+
+    'medieval': {
+        id: 'medieval',
+        heading: "'Cinzel', serif",
+        body: "'EB Garamond', serif",
+        headingWeight: 700,
+        bodyWeight: 400,
+        vibe: 'Old English, Roman, Medieval'
+    },
+
+    'royal': {
+        id: 'royal',
+        heading: "'Cormorant Garamond', serif",
+        body: "'Cormorant Garamond', serif",
+        headingWeight: 600,
+        bodyWeight: 400,
+        vibe: 'Regal and ornate'
+    },
 }
 
 /**
