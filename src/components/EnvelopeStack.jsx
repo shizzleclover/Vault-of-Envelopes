@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { Environment, ContactShadows } from '@react-three/drei'
+import { ContactShadows } from '@react-three/drei'
 import { Suspense, useState, useCallback, useEffect } from 'react'
 import { useDrag } from '@use-gesture/react'
 import { useSpring, animated } from '@react-spring/three'
@@ -195,8 +195,8 @@ export default function EnvelopeStack() {
                     <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
                     <pointLight position={[-5, -5, 5]} intensity={0.5} color="#D4AF37" />
 
-                    {/* Environment for reflections */}
-                    <Environment preset="city" />
+                    {/* Light sky blue background */}
+                    <color attach="background" args={['#87CEEB']} />
 
                     {/* Contact shadows on ground */}
                     <ContactShadows
