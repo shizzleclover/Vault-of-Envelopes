@@ -776,51 +776,158 @@
         },
         "letter": {
             "paperTexture": "vintage-cream",
-            "fontPairing": "classic",
+            "fontPairing": "romantic",
             "accentColor": "#FF6B6B",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Ire,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Hey Ire,",
+                    "content": "I have been thinking a lot about this past year and I realized I do not tell you nearly enough how much I value and appreciate you. Even though we may not talk all the time, I want you to know that you are someone I genuinely care about and admire. 2025 was a whole journey, and I honestly do not think it would have felt the same without you in it."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "Your Energy",
+                    "content": "From the very first day we met at uni, your energy has always stood out. You have this way of lighting up any room you walk into, and it is impossible not to notice or be drawn into it. Over the past year, being around you, working with you, and sharing even small moments has been such a highlight for me."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "I See You",
+                    "content": "Beyond the projects, beyond school and assignments, Ire, I want you to know that I see you. I see your heart, your strength, your intelligence, your courage to speak your mind, and your grace while doing it. You are someone who can stand firm, express yourself, and still make people feel valued and respected."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Interstellar",
-                        "Her",
-                        "The Grand Budapest Hotel"
-                    ]
+                    "type": "recap",
+                    "title": "Your Faith",
+                    "content": "Your faith in God is one of the things I really respect about you. The way you hold on to it, how it shapes your words, actions, and energy, it is inspiring. It reminds me that strength and kindness can go hand in hand, and that faith can shine through without needing to be loud about it."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "You Are Loved",
+                    "content": "Even though we may not spend every day talking, I want you to know that you are loved and appreciated. Your presence, your energy, your insights, and the way you care for people around you leave a mark. You make the people who are lucky enough to know you feel seen and valued."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "The Song",
+                    "content": "There is literally no day I listen to Adekunle Gold's \"Ire\" that you do not pop into my mind. The song just feels like it was made for you. Honestly, I lowkey imagine it playing as you walk down the aisle at your wedding one day. I picture you making your entrance with that exact song in the background, all eyes on you."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "Proud Of You",
+                    "content": "Ire, I am proud of you. Proud of the way you have handled this year, proud of the way you have grown, and proud of the way you carry yourself. I hope 2026 gives you even more opportunities to shine, more moments that make you feel celebrated, more joy, and more peace."
+                },
+                {
+                    "id": 8,
+                    "type": "recap",
+                    "title": "Thank You",
+                    "content": "Thank you for being inspiring, for being real, for being bold, for being graceful, and for being someone I can respect and admire so deeply. Thank you for the laughs, the energy, and the light you bring, even on days when things feel heavy. You are truly valued and loved, Ire. Never forget that."
+                },
+                {
+                    "id": 9,
+                    "type": "recap",
+                    "title": "Looking Forward",
+                    "content": "I am really excited to see everything you accomplish in 2026 and beyond. And every time \"Ire\" comes on, I will be reminded of you your energy, your hope, and the warmth you bring into the world.\n\nYour friend,\nMurewa"
+                },
+                {
+                    "id": 16,
+                    "type": "tarot"
+                },
+                {
+                    "id": 11,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Iretomiwa/heic-converted/IMG_1399.jpg",
+                        "/memories/Iretomiwa/IMG_4156.PNG",
+                        "/memories/Iretomiwa/heic-converted/IMG_4470.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4471.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4472.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4473.jpg"
+                    ]
+                },
+                {
+                    "id": 12,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Iretomiwa/heic-converted/IMG_4475.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4476.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4477.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4478.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4479.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4480.jpg"
+                    ]
+                },
+                {
+                    "id": 13,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Iretomiwa/heic-converted/IMG_4481.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4482.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4484.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_4496.jpg",
+                        "/memories/Iretomiwa/IMG_7234.PNG",
+                        "/memories/Iretomiwa/heic-converted/IMG_8363.jpg"
+                    ]
+                },
+                {
+                    "id": 14,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Iretomiwa/heic-converted/IMG_8364.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_8365.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_8368.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_8369.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_8431.jpg",
+                        "/memories/Iretomiwa/heic-converted/IMG_8432.jpg"
+                    ]
+                },
+                {
+                    "id": 15,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Iretomiwa/heic-converted/IMG_8433.jpg",
+                        "/memories/Iretomiwa/IMG_8450.JPG",
+                        "/memories/Iretomiwa/heic-converted/IMG_8650.jpg",
+                        "/memories/Iretomiwa/IMG_8651.MOV",
+                        "/memories/Iretomiwa/IMG_8656.JPG",
+                        "/memories/Iretomiwa/IMG_9188.JPG"
+                    ]
+                },
+                {
+                    "id": 16,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Iretomiwa/e7e5ff4a-e906-4301-ace6-069b2b8f71d1.jpg",
+                        "/memories/Iretomiwa/filtered-1BDFE4BB-0C6F-49A0-8B3B-61822E59DA82.mp4",
+                        "/memories/Iretomiwa/filtered-6ABFDE6F-5327-4420-A3EB-7C87022EFF81.mp4",
+                        "/memories/Iretomiwa/filtered-BF8A1C77-02A3-44ED-BE5C-451872678459.mp4"
+                    ]
+                },
+                {
+                    "id": 17,
                     "type": "tarot"
                 }
             ]
         },
-        "password": "placeholder",
+        "password": "IreOfGod",
         "backgroundMusic": "/music/Ire.mp3",
-        "tarotCard": null
+        "tarotCard": {
+            "id": "the-tower",
+            "name": "The Tower",
+            "numeral": "XVI",
+            "image": "/tarot/the-tower.JPG",
+            "meaning": "The Tower represents transformation through revelation. It strips away what no longer serves you and makes way for something truer. Ire, you have always stood firm and spoken truth with grace. This card honors your courage to be authentic, and promises that 2026 will bring clarity, growth, and new beginnings built on a stronger foundation."
+        }
     },
     {
         "id": "kamsi-2025",
