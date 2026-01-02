@@ -1261,6 +1261,12 @@
                     ]
                 },
                 {
+                    "id": 10,
+                    "type": "spotify",
+                    "title": "Your 2026 Vibes",
+                    "playlistUrl": "https://open.spotify.com/embed/playlist/79tdbrXk0TbGEIiKIXG5UT?utm_source=generator"
+                },
+                {
                     "id": 9,
                     "type": "tarot"
                 }
