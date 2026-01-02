@@ -300,51 +300,83 @@
         },
         "letter": {
             "paperTexture": "sage-mist",
-            "fontPairing": "editorial",
+            "fontPairing": "romantic",
             "accentColor": "#27AE60",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear David,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Hey David,",
+                    "content": "I have been thinking a lot about this past year, and I realized I do not tell you enough how much I appreciate you. Not just as my course rep, but as my friend. Honestly, 2025 would not have felt the same without you in it. I probably spent more time in or around your room than anywhere else in school this year, and that alone says a lot about how much I value your presence, your warmth, and the comfort that comes with just being around you. Your room was like a safe spot, a resting place, a place to laugh, overthink, gist, cool off, and just breathe."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "You Really Tried",
+                    "content": "You really tried this year. As course rep, you gave so much of yourself, more than people even realize. I saw the effort, the stress, the responsibility, the times you had to carry the entire class on your back, even when you were tired or overwhelmed. You always showed up. You always tried to make things work. You put others first, and most people do not understand how heavy that role can be. I want you to know that I see you, and I appreciate you deeply for everything you did. You do so much and hardly ever get the appreciation you deserve."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "My Labubu",
+                    "content": "But beyond being course rep, you are my guy. My labubu. Big in presence and big in heart. Soft on the inside in the best way. Thoughtful. Gentle. Kind. The kind of person who cares deeply, laughs honestly, and feels things fully. You read manwha, reflect a lot, and still somehow manage to stay grounded and loving. You are someone who loves and is loved in return, and it shows in the way people feel safe around you. Being in your space makes life feel easier. You make difficult days lighter and good days even better."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Shawshank Redemption",
-                        "Inception",
-                        "The Dark Knight"
-                    ]
+                    "type": "recap",
+                    "title": "Treasure's Husband",
+                    "content": "And of course, I cannot forget Treasure. Treasure's husband. We know you will say you do not like her, but we have already claimed you both in advance. The teasing will never end, and honestly, it is too funny to stop. I can already imagine one future day when we walk into a hall and it is your wedding, and you are there smiling in disbelief, and we are somewhere in the crowd laughing because we always knew it would be you and Treasure. The image alone finishes me every time. You are stuck with that title forever. Treasure's husband."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "I See You",
+                    "content": "Jokes aside, I want you to know that I truly see you. I see your strength, your patience, your loyalty, your resilience, and your quiet kindness. I see how hard you work, how much you care, and how much effort you put into everything and everyone around you. You are a rare kind of person, the kind that leaves an impact without trying, the kind that makes people feel seen, safe, and appreciated."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "Proud Of You",
+                    "content": "I am proud of you. Proud of your growth, proud of the way you carry responsibility, proud of the way you treat people, and proud of the heart you lead with. You may feel overlooked sometimes, but you are deeply valued, and your presence matters more than you know."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "Thank You",
+                    "content": "Thank you for being a friend I could sit with, laugh with, complain with, and just exist around. Thank you for the days spent in your room, the random conversations, the quiet moments, the loud jokes, and everything in between. This year was better because you were in it."
+                },
+                {
+                    "id": 8,
+                    "type": "recap",
+                    "title": "Looking Forward",
+                    "content": "Here is to more memories, more peace, more success, more growth, more manwha talk, more laughter, and of course, more teasing about Treasure. I hope 2026 brings you joy, clarity, rest, fulfillment, and every blessing you truly deserve.\n\nYou are appreciated. You are loved. And you will always be my guy.\n\nYour friend,\nMurewa"
+                },
+                {
+                    "id": 9,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/David labubu/86bacd0e-2fa6-4712-bafe-fbfc9864e0e8.jpg",
+                        "/memories/David labubu/D7D25F4B-909B-4C3E-9248-E7BA6AD0FC67.mp4",
+                        "/memories/David labubu/IMG_1668.JPG",
+                        "/memories/David labubu/IMG_1669.JPG"
+                    ]
+                },
+                {
+                    "id": 10,
                     "type": "tarot"
                 }
             ]
         },
-        "password": "placeholder",
+        "password": "Labubu2026",
         "backgroundMusic": "/music/David.mp3",
-        "tarotCard": null
+        "tarotCard": {
+            "id": "strength",
+            "name": "Strength",
+            "numeral": "VIII",
+            "image": "/tarot/IMG_2435.JPG",
+            "meaning": "Strength represents quiet power, patience, and inner courage. David, you carry others on your shoulders with grace and rarely get the recognition you deserve. This card honors your gentle strength, your enduring heart, and the way you lead through love. In 2026, may your strength be matched with rest, appreciation, and the blessings you have earned."
+        }
     },
     {
         "id": "timi-2025",

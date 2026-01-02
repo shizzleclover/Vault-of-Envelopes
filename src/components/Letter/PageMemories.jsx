@@ -33,6 +33,7 @@ export default function PageMemories({ page, envelope, fontPairing, accentColor 
             opacity: 1,
             scale: 1,
             transition: {
+                
                 duration: 0.4,
             },
         },

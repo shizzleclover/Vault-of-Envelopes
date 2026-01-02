@@ -48,7 +48,7 @@ export function useAudio(src, options = {}) {
         }
     }, [src, loop])
 
-                                                    // Handle mute changes
+     // Handle mute changes
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.muted = isMuted
