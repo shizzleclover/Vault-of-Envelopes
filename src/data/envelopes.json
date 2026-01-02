@@ -1366,45 +1366,106 @@
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Raymond,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Hey Raymond,",
+                    "content": "I have been thinking a lot about this past year, and honestly, there is no version of it that feels complete without you in it. When I look back at everything we went through, all the days we shared, all the memories that somehow turned into milestones, you are right there in the middle of them. You did not just walk through the year with me, you helped me carry it. And I do not think I will ever stop being grateful for that."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "More Than A Friend",
+                    "content": "From going to class together, to laughing through stress, to talking about life, faith, plans, and everything in between, you became more than just a friend. You became a brother to me. Someone I genuinely believe God placed in my life intentionally. Your presence made the hard days lighter, the long days bearable, and the good days even better."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "Your Warm Soul",
+                    "content": "Uncle Ray Ray, you have such a warm soul. There is a softness and depth in the way you care about people, the way you listen, the way you show up quietly but consistently. Being around you feels steady and grounding. You never force your presence, yet it matters so much. And I appreciate that more than I can express."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Shutter Island",
-                        "Se7en",
-                        "Zodiac"
-                    ]
+                    "type": "recap",
+                    "title": "Your Faith",
+                    "content": "Your faith is something I truly respect. The way you hold on to God, the patience you carry, the strength you draw from your beliefs, and the way you let your values guide you, it says a lot about the kind of person you are. You have this calm, quiet strength that does not need to prove itself, and it inspires me in ways you may not even realize."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "Your Creativity",
+                    "content": "I also really admire your creativity. You have this unique way of seeing the world, of creating, of building ideas from nothing and breathing life into them. You do not just do things mechanically, you create from the heart. Whether it is projects, thoughts, concepts, or even simple ideas we talk about, you approach them with passion and intention. You love creating, shaping, imagining, and that makes you stand out in a beautiful way. It is one of the many things I genuinely respect about you."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "Thank You For Being There",
+                    "content": "There were many days this year that would have felt heavier if you were not there. Times when school felt overwhelming, but going through it with you made it easier. Moments where things felt confusing, but talking to you brought clarity. You helped me more than you know, sometimes through advice, sometimes through shared silence, and sometimes just by being present. And I am deeply grateful for all of it."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "I Am Proud Of You",
+                    "content": "I am proud of you, Raymond. Proud of your growth, your discipline, your faith, your creativity, and the man you are becoming. You carry yourself with sincerity, and that is rare. I respect you not just as a friend, but as a person and as a brother."
+                },
+                {
+                    "id": 8,
+                    "type": "recap",
+                    "title": "My Prayer For You",
+                    "content": "As we move into a new year, my prayer for you is that God continues to guide you, strengthen you, and bless you. I pray He rewards your kindness, your creativity, your effort, and your heart. I pray your ideas grow into opportunities, your gifts find space to shine, and your path unfolds in ways that align beautifully with who you are."
+                },
+                {
+                    "id": 9,
+                    "type": "recap",
+                    "title": "Peace And Joy",
+                    "content": "I also pray that your soul stays warm, your joy deepens, and your peace remains untouched. You deserve goodness in abundance, and I truly believe more great things are ahead for you."
+                },
+                {
+                    "id": 10,
+                    "type": "recap",
+                    "title": "Brotherhood",
+                    "content": "Thank you for being there for me. For the laughs, the support, the understanding, the loyalty, the shared days, and the brotherhood. You made this year meaningful in a way I cannot imagine without you, and I appreciate you deeply for that.\\n\\nI have got you always, Uncle Ray Ray. And I am grateful I get to do life with someone like you in my corner.\\n\\nYour boy,\\nMurewa"
+                },
+                {
+                    "id": 11,
+                    "type": "movies",
+                    "title": "Creative Inspiration",
+                    "list": [
+                        "Soul",
+                        "The Secret Life of Walter Mitty",
+                        "Whiplash",
+                        "Everything Everywhere All At Once"
+                    ]
+                },
+                {
+                    "id": 12,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Raymond/IMG_2496.PNG",
+                        "/memories/Raymond/IMG_2497.PNG",
+                        "/memories/Raymond/IMG_2498.PNG",
+                        "/memories/Raymond/IMG_4712.HEIC",
+                        "/tarot/IMG_2472.JPG"
+                    ]
+                },
+                {
+                    "id": 13,
+                    "type": "typing",
+                    "title": "Your Creative Challenge"
+                },
+                {
+                    "id": 14,
                     "type": "tarot"
                 }
             ]
         },
-        "password": "placeholder",
-        "backgroundMusic": "/music/Site-background-music.mp3",
-        "tarotCard": null
+        "password": "raymond_the_creative",
+        "backgroundMusic": "/music/Raymond.mp3",
+        "tarotCard": {
+            "id": "the-world",
+            "name": "The World",
+            "numeral": "XXI",
+            "image": "/tarot/IMG_2437.JPG",
+            "meaning": "The World represents completion, wholeness, and the fulfillment of a journey. You have come full circle, Raymond. Your creativity, faith, and warmth have woven together into something beautiful. This card celebrates the man you are becomingwhole, grounded, and ready for whatever comes next. The world truly is yours to shape."
+        }
     },
     {
         "id": "tolu-bu-2025",
