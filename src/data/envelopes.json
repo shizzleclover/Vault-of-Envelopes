@@ -1611,51 +1611,85 @@
         },
         "letter": {
             "paperTexture": "golden-hour",
-            "fontPairing": "soft",
+            "fontPairing": "romantic",
             "accentColor": "#FF9800",
             "pages": [
                 {
                     "id": 1,
                     "type": "intro",
-                    "title": "Dear Tolu Bu,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you..."
+                    "title": "Tolu,",
+                    "content": "Bro, I have been thinking a lot about the past couple of years and I just had to put this into words. I remember the first day we met in 2023 during the Cardify internship. I walked into the office and it was quiet, everything felt slow and dull, and then you came in and immediately brought energy, life, and good vibes to the place. From that first day, I knew we would click, and honestly, meeting you has been one of the best things to happen to me."
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of growth, challenges, and beautiful moments. Through it all, you've shown incredible resilience and grace."
+                    "title": "More Than A Friend",
+                    "content": "Over these past two years, you have become so much more than just a friend. You have been my main man, my go-to, someone I can genuinely rely on, and someone I trust completely. 2025 especially showed me what a real friend you are. You really turned up for me, in ways that meant a lot. You helped me with school, you were there when money was tight, and you made sure I did not feel alone when things were tough."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Your 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "I Love You Bro",
+                    "content": "Not everyone would do that, and it is one of the reasons I value you so much. I honestly love you, bro, and I want you to know that."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "Soul",
-                        "Coco",
-                        "Up"
-                    ]
+                    "type": "recap",
+                    "title": "The Little Moments",
+                    "content": "I also remember all the little moments that made the days brighter. Like all the times we went to Jara for food after a long day, or just chilling and talking about life, school, projects, or random nonsense. Those moments feel small, but they meant a lot. They made the stress lighter, the days funnier, and they made our bond even stronger."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "Proud Of You",
+                    "content": "You also finished your NYSC last year, and I know it was rough for you. Life threw challenges your way, and you faced them head-on. Even with the hard moments, you kept pushing, kept showing up, and kept moving forward. I am genuinely proud of you for making it this far. You handled things with patience, strength, and resilience, and that is inspiring to me."
                 },
                 {
                     "id": 6,
+                    "type": "recap",
+                    "title": "You Mean A Lot",
+                    "content": "Tolu, I just want you to know that I really value our friendship. You have been someone I can lean on, someone I can laugh with, someone who keeps it real, and someone who makes life better just by being in it. You have been a big part of my 2025, and I honestly cannot imagine going through the year without you by my side."
+                },
+                {
+                    "id": 7,
+                    "type": "recap",
+                    "title": "My Prayer For You",
+                    "content": "As we step into 2026, my prayer for you is that this year brings you peace, growth, success, and happiness in every way. I hope every door you knock on opens in your favor, that your hard work pays off, and that your heart stays full of joy and hope. I hope we make even more memories this year, more Jara trips, more laughter, more late-night talks, and more times just enjoying life together."
+                },
+                {
+                    "id": 8,
+                    "type": "recap",
+                    "title": "Your Boy",
+                    "content": "Thank you for being my guy, my brother, and my friend. I am truly grateful for you, for the energy you bring, the support you give, and the bond we share. You mean a lot to me, and I cannot wait to see everything this year has in store for you.\n\nYour boy,\nMurewa"
+                },
+                {
+                    "id": 9,
+                    "type": "memories",
+                    "title": "Our Moments",
+                    "images": [
+                        "/memories/Tolu BU/9920B96F-A241-4072-87E1-549106D706C5.jpg",
+                        "/memories/Tolu BU/IMG_2825.heic",
+                        "/memories/Tolu BU/IMG_5399.PNG",
+                        "/memories/Tolu BU/IMG_5748.PNG",
+                        "/memories/Tolu BU/IMG_8702.PNG",
+                        "/tarot/IMG_2439.JPG"
+                    ]
+                },
+                {
+                    "id": 10,
                     "type": "tarot"
                 }
             ]
         },
-        "password": "placeholder",
-        "backgroundMusic": "/music/Site-background-music.mp3",
-        "tarotCard": null
+        "password": "ToluBu2026",
+        "backgroundMusic": "/music/Tolu-bu.mp3",
+        "tarotCard": {
+            "id": "the-moon",
+            "name": "The Moon",
+            "numeral": "XVIII",
+            "image": "/tarot/IMG_2434.JPG",
+            "meaning": "The Moon illuminates what is hidden. It represents intuition, dreams, and the journey through uncertainty. Tolu, you have walked through seasons of confusion and hardship, yet you kept moving forward. Like the moon, you guide those around you with your quiet presence. Trust your inner voice this year."
+        }
     },
     {
         "id": "tolu-2025",
