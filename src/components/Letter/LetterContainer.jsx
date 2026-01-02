@@ -13,6 +13,7 @@ import PageTarot from './PageTarot'
 import PageMantra from './PageMantra'
 import PageTyping from './PageTyping'
 import PageGif from './PageGif'
+import PageCelebration from './PageCelebration'
 import { FloatingParticles } from './FloatingDecorations'
 
 
@@ -116,6 +117,8 @@ export default function LetterContainer({ envelope, onClose }) {
                 return <PageTyping {...pageProps} />
             case 'gif':
                 return <PageGif {...pageProps} />
+            case 'celebration':
+                return <PageCelebration {...pageProps} />
             default:
                 return <div className="text-cream">Unknown page type</div>
         }

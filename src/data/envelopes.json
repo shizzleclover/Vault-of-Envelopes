@@ -586,50 +586,178 @@
         },
         "letter": {
             "paperTexture": "smooth-white",
-            "fontPairing": "clean",
+            "fontPairing": "romantic",
             "accentColor": "#D4AF37",
             "pages": [
                 {
                     "id": 1,
-                    "type": "intro",
-                    "title": "Dear Investment Banking Team,",
-                    "content": "As we step into 2025, I wanted to share some thoughts with you all..."
+                    "type": "celebration",
+                    "title": "Investment Banking",
+                    "subtitle": "3 Years of Brotherhood",
+                    "content": "Boys, I just realized something and it honestly feels mad. 2026 makes it three years since we created this group.",
+                    "members": [
+                        "David",
+                        "Tolu",
+                        "Donald",
+                        "Maro",
+                        "Owen",
+                        "Okwui",
+                        "Caleb",
+                        "Delegun",
+                        "Kamsi",
+                        "Oke",
+                        "Ugo",
+                        "Khalid",
+                        "Habib",
+                        "Murewa"
+                    ]
                 },
                 {
                     "id": 2,
                     "type": "recap",
-                    "content": "2024 was a year of hustle, late nights, and incredible wins. Through it all, this team showed what it means to deliver excellence."
+                    "title": "How It Started",
+                    "content": "We started this group when we were struggling and broke, just trying to survive school together. From sporty tickets that finished us to miracle wins, to Davids useless luck and Maros foolishness to football arguments that made absolutely no sense, to inside jokes nobody outside this group would ever understand, this place has really been a part of our lives."
                 },
                 {
                     "id": 3,
-                    "type": "spotify",
-                    "title": "Team 2025 Vibes",
-                    "playlistUrl": ""
+                    "type": "recap",
+                    "title": "Through It All",
+                    "content": "We have gone through a lot together, both loudly and quietly. Classes, pressure, deadlines, tired weeks, failed tickets, small wins, big jokes, and vibes that carried us through days that would have been worse without each other."
                 },
                 {
                     "id": 4,
-                    "type": "movies",
-                    "title": "Movies We'll Watch",
-                    "list": [
-                        "The Big Short",
-                        "Margin Call",
-                        "Wolf of Wall Street"
-                    ]
+                    "type": "recap",
+                    "title": "The Brotherhood",
+                    "content": "We did not just make a group chat. We created a space where everyone feels like they belong. Even when we are roasting each other, there is real love underneath it."
                 },
                 {
                     "id": 5,
-                    "type": "memories",
-                    "title": "Highlights",
-                    "images": []
+                    "type": "recap",
+                    "title": "Final Year Loading",
+                    "content": "Now we are here in final year, graduation loading. The same boys that were sacrificing grandma on bets are now stepping into real life. It is actually crazy when you think about it."
                 },
                 {
                     "id": 6,
-                    "type": "tarot"
+                    "type": "recap",
+                    "title": "IB Forever",
+                    "content": "I am proud of us. Proud of the growth, the friendship, the chaos, and the fact that we somehow made it through everything together.\n\nWherever life takes us after this, I hope we all win.\n\nInvestment Banking forever.\nLove you boys\nFuck you david."
+                },
+                {
+                    "id": 100,
+                    "type": "movies",
+                    "title": "Movies For The Boys",
+                    "list": [
+                        "The Hangover",
+                        "Superbad",
+                        "21 Jump Street",
+                        "Bad Boys",
+                        "Project X",
+                        "Friday"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/1F94F16D-C051-4C78-ADBF-9B6C49C7EA20.jpg",
+                        "/memories/Investment Banking/27b2c9af-e0d2-4469-8fae-ec27305b54fa.jpg",
+                        "/memories/Investment Banking/384ff5a7-f3fb-4a31-8bc6-5183c8021950.jpg",
+                        "/memories/Investment Banking/6c2a7d53-a207-44ce-acc2-c87225e8b7a9.jpg",
+                        "/memories/Investment Banking/9931E92A-A611-400D-AF25-7FBA878AE24E.jpg",
+                        "/memories/Investment Banking/B716E5FA-9641-4897-9752-C5FCAD2D2F6F.mov"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/IMG_0383.PNG",
+                        "/memories/Investment Banking/IMG_0385.JPG",
+                        "/memories/Investment Banking/IMG_0624.JPG",
+                        "/memories/Investment Banking/IMG_0987.PNG",
+                        "/memories/Investment Banking/IMG_1201.JPG",
+                        "/memories/Investment Banking/IMG_1202.JPG"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/IMG_1283.JPG",
+                        "/memories/Investment Banking/IMG_1304.PNG",
+                        "/memories/Investment Banking/IMG_1355.JPG",
+                        "/memories/Investment Banking/IMG_1364.JPG",
+                        "/memories/Investment Banking/IMG_1382.PNG",
+                        "/memories/Investment Banking/IMG_1450.HEIC"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/IMG_1453.HEIC",
+                        "/memories/Investment Banking/IMG_1700.JPG",
+                        "/memories/Investment Banking/IMG_1959.PNG",
+                        "/memories/Investment Banking/IMG_2328.JPG",
+                        "/memories/Investment Banking/IMG_2423.PNG",
+                        "/memories/Investment Banking/IMG_2957.PNG"
+                    ]
+                },
+                {
+                    "id": 11,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/IMG_3346.JPG",
+                        "/memories/Investment Banking/IMG_3839.PNG",
+                        "/memories/Investment Banking/IMG_4836.JPG",
+                        "/memories/Investment Banking/IMG_5157.PNG",
+                        "/memories/Investment Banking/IMG_5291.JPG",
+                        "/memories/Investment Banking/IMG_5572.JPG"
+                    ]
+                },
+                {
+                    "id": 12,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/IMG_5679.PNG",
+                        "/memories/Investment Banking/IMG_5973.PNG",
+                        "/memories/Investment Banking/IMG_7221.PNG",
+                        "/memories/Investment Banking/IMG_8597.JPG",
+                        "/memories/Investment Banking/IMG_8761.JPG",
+                        "/memories/Investment Banking/IMG_8763.JPG"
+                    ]
+                },
+                {
+                    "id": 13,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/WhatsApp Image 2026-01-02 at 11.12.35.jpeg",
+                        "/memories/Investment Banking/ac6cd3ff-1ca8-45f7-ae77-9c1b10ebb7e8.jpg",
+                        "/memories/Investment Banking/c7c7db99-d743-41c5-898d-35814a8d005b(1).jpg",
+                        "/memories/Investment Banking/c7c7db99-d743-41c5-898d-35814a8d005b.jpg",
+                        "/memories/Investment Banking/ec2166a7-4272-4bfb-b6fd-2f68f2f6030a.jpg",
+                        "/memories/Investment Banking/f23145e1-6147-49d3-9f4a-4e259b71e92d.jpg"
+                    ]
+                },
+                {
+                    "id": 14,
+                    "type": "memories",
+                    "title": "Moments",
+                    "images": [
+                        "/memories/Investment Banking/f55e7c58-5a17-4f1e-ab9f-bea5364c07cb.jpg"
+                    ]
                 }
             ]
         },
-        "password": "placeholder",
-        "backgroundMusic": "/music/Site-background-music.mp3",
+        "password": "Ekuke_maro",
+        "backgroundMusic": "/music/Investment banking.mp3",
         "tarotCard": null
     },
     {
