@@ -89,7 +89,7 @@
             ]
         },
         "password": "oscrohOG",
-        "backgroundMusic": "/Music/Oscroh.mp3",
+        "backgroundMusic": "/music/Oscroh.mp3",
         "tarotCard": {
             "id": "the-lovers",
             "name": "The Lovers",
@@ -157,7 +157,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -219,7 +219,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Collins.mp3",
+        "backgroundMusic": "/music/Collins.mp3",
         "tarotCard": null
     },
     {
@@ -281,7 +281,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -343,7 +343,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/David.mp3",
+        "backgroundMusic": "/music/David.mp3",
         "tarotCard": null
     },
     {
@@ -458,7 +458,7 @@
             ]
         },
         "password": "Kanyespenis",
-        "backgroundMusic": "/Music/Timi-embedding.mp3",
+        "backgroundMusic": "/music/Timi-embedding.mp3",
         "tarotCard": {
             "id": "wheel-of-fortune",
             "name": "Wheel of Fortune",
@@ -561,7 +561,7 @@
             ]
         },
         "password": "wearecharliekirk",
-        "backgroundMusic": "/Music/emma.mp3",
+        "backgroundMusic": "/music/emma.mp3",
         "tarotCard": {
             "id": "the-fool",
             "name": "The Fool",
@@ -629,7 +629,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -691,7 +691,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Ire.mp3",
+        "backgroundMusic": "/music/Ire.mp3",
         "tarotCard": null
     },
     {
@@ -753,7 +753,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/kamsi.mp3",
+        "backgroundMusic": "/music/kamsi.mp3",
         "tarotCard": null
     },
     {
@@ -815,7 +815,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -877,7 +877,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Maro.mp3",
+        "backgroundMusic": "/music/Maro.mp3",
         "tarotCard": null
     },
     {
@@ -939,7 +939,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Michelle.mp3",
+        "backgroundMusic": "/music/Michelle.mp3",
         "tarotCard": null
     },
     {
@@ -1001,7 +1001,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1063,7 +1063,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1176,7 +1176,7 @@
             ]
         },
         "password": "Oorz",
-        "backgroundMusic": "/Music/Oluwole.mp3",
+        "backgroundMusic": "/music/Oluwole.mp3",
         "tarotCard": {
             "id": "the-hermit",
             "name": "The Hermit",
@@ -1267,7 +1267,7 @@
             ]
         },
         "password": "LanotliaTheRiceist",
-        "backgroundMusic": "/Music/priscilla-main.mp3",
+        "backgroundMusic": "/music/priscilla-main.mp3",
         "tarotCard": {
             "id": "queen-of-blades",
             "name": "The Queen of Blades",
@@ -1335,7 +1335,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1397,7 +1397,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1459,7 +1459,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1521,7 +1521,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Site-background-music.mp3",
+        "backgroundMusic": "/music/Site-background-music.mp3",
         "tarotCard": null
     },
     {
@@ -1583,7 +1583,7 @@
             ]
         },
         "password": "placeholder",
-        "backgroundMusic": "/Music/Vwarak.mp3",
+        "backgroundMusic": "/music/Vwarak.mp3",
         "tarotCard": null
     }
 ]

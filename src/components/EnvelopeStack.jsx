@@ -29,7 +29,7 @@ export default function EnvelopeStack() {
         toggleMute,
         isBlocked,
         retryPlay
-    } = useAudio('/Music/Cece.mp3', {
+    } = useAudio('/music/Cece.mp3', {
         volume: 0.6,
         fadeInDuration: 2000,
         loop: true

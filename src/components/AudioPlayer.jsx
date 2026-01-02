@@ -17,11 +17,22 @@ export default function AudioPlayer({ src }) {
         loop: true,
     })
 
-    // Auto-play when component mounts
+    // Auto-play when component mounts (empty deps to run once)
     useEffect(() => {
-        play()
-        return () => stop()
-    }, [play, stop])
+        let isMounted = true
+
+        // Small delay to ensure audio is ready
+        const timer = setTimeout(() => {
+            if (isMounted) play()
+        }, 100)
+
+        return () => {
+            isMounted = false
+            clearTimeout(timer)
+            stop()
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     return (
         <>
@@ -84,7 +95,7 @@ export default function AudioPlayer({ src }) {
                                 Tap to Begin
                             </p>
                             <p className="font-inter text-sm text-cream/60">
-                                
+
                             </p>
                         </div>
                     </button>
